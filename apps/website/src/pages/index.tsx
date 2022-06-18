@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { TextInput } from 'tailwind-primitives-wxd';
+import { TextInput } from '@labxd/gust';
 
 const Home: NextPage = () => {
   return (

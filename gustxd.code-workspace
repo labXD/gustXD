@@ -1,8 +1,16 @@
 {
   "folders": [
     {
-      "name": "✨ Root",
+      "name": "✨ gustxd",
       "path": "."
+    },
+    {
+      "name": "🚀 website",
+      "path": "apps/website"
+    },
+    {
+      "name": "📦 @labxd/gust",
+      "path": "packages/gust"
     }
   ],
   "settings": {
@@ -18,7 +26,8 @@
     "recommendations": [
       "dbaeumer.vscode-eslint",
       "esbenp.prettier-vscode",
-      "folke.vscode-monorepo-workspace"
+      "folke.vscode-monorepo-workspace",
+      "bradlc.vscode-tailwindcss"
     ]
   }
 }

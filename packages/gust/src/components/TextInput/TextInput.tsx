@@ -1,5 +1,5 @@
-import React from 'react';
-import cn from 'classnames';
+import React from "react";
+import cn from "classnames";
 
 export type TextInputProps = {
   placeholder?: string;
@@ -22,42 +22,42 @@ export const TextInput: React.FC<TextInputProps> = ({
   const outerClassNames = cn(className);
 
   const labelWrapperClassNames = cn(
-    'block',
-    'font-medium',
-    'text-sm',
-    'text-gray-700'
+    "block",
+    "font-medium",
+    "text-sm",
+    "text-gray-700"
   );
 
   const prefixWrapperClassNames = cn(
-    'absolute',
-    'flex',
-    'inset-y-0',
-    'left-0',
-    'items-center',
-    'pl-3',
-    'pointer-events-none'
+    "absolute",
+    "flex",
+    "inset-y-0",
+    "left-0",
+    "items-center",
+    "pl-3",
+    "pointer-events-none"
   );
 
-  const prefixClassNames = cn('text-gray-500', 'sm:text-sm');
+  const prefixClassNames = cn("text-gray-500", "sm:text-sm");
 
   const inputWrapperClassNames = cn(
-    'mt-1',
-    'relative',
-    'rounded-md',
-    'shadow-sm'
+    "mt-1",
+    "relative",
+    "rounded-md",
+    "shadow-sm"
   );
 
   const inputClassNames = cn(
-    'border-gray-300',
-    'block w-full',
-    'focus:ring-indigo-500',
-    'focus:border-indigo-500',
-    'pr-3',
-    'rounded-md',
-    'sm:text-sm',
+    "border-gray-300",
+    "block w-full",
+    "focus:ring-indigo-500",
+    "focus:border-indigo-500",
+    "pr-3",
+    "rounded-md",
+    "sm:text-sm",
     {
-      'pl-3': !prefix,
-      'pl-7': prefix,
+      "pl-3": !prefix,
+      "pl-7": prefix,
     }
   );
   return (
