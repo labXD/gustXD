@@ -1,5 +1,5 @@
 {
-  "name": "ui-infrastructure",
+  "name": "ui-tailwind",
   "version": "0.0.0",
   "description": "Collection of UI infrastructure tooling",
   "contributors": [
@@ -10,8 +10,9 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "eslint": "^8.18.0",
     "prettier": "^2.7.1",
-    "eslint": "^8.18.0"
+    "stylelint": "^14.9.1"
   },
   "repository": {
     "type": "git",
