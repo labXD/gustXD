@@ -1,9 +1,8 @@
 {
-  "name": "ui-tailwind",
-  "version": "0.0.0",
-  "description": "Collection of UI infrastructure tooling",
+  "name": "gustxd",
+  "description": "Monorepo for gustXD",
   "contributors": [
-    "jamesfrontend",
+    "jimmynXD",
     "wallexd"
   ],
   "packageManager": "pnpm@7.2.1",
@@ -14,12 +13,15 @@
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1"
   },
+  "scripts": {
+    "bootstrap": "corepack enable && pnpm install"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesfrontend/ui-infrastructure.git"
+    "url": "git+https://github.com/labXD/gustXD.git"
   },
   "bugs": {
-    "url": "https://github.com/jamesfrontend/ui-infrastructure/issues"
+    "url": "https://github.com/labXD/gustXD/issues"
   },
-  "homepage": "https://github.com/jamesfrontend/ui-infrastructure#readme"
+  "homepage": "https://github.com/labXD/gustXD#readme"
 }
