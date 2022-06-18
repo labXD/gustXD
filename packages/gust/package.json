@@ -10,6 +10,7 @@
     "src"
   ],
   "exports": {
+    ".": "./dist/index.js",
     "./styles": "./dist/gust.cjs.development.css"
   },
   "engines": {
