@@ -1,0 +1,24 @@
+{
+  "name": "ui-infrastructure",
+  "version": "0.0.0",
+  "description": "Collection of UI infrastructure tooling",
+  "contributors": [
+    "jamesfrontend",
+    "wallexd"
+  ],
+  "packageManager": "pnpm@7.2.1",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "eslint": "^8.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesfrontend/ui-infrastructure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesfrontend/ui-infrastructure/issues"
+  },
+  "homepage": "https://github.com/jamesfrontend/ui-infrastructure#readme"
+}
