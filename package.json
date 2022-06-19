@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "corepack enable && pnpm install",
-    "create": "npx hygen create component"
+    "create:component": "npx hygen create component"
   },
   "devDependencies": {
     "eslint": "^8.18.0",
