@@ -2,4 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('@labxd/gust/styles');
+/* Use the preset instead of the stylesheet */
+/* @import url('@labxd/gust/styles'); */

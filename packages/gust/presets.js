@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
-  presets: [require('./presets')],
-  content: ['./src/**/*.{html,js,tsx,jsx}'],
+  plugins: [require('@tailwindcss/forms')],
 };
 
 module.exports = config;

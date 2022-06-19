@@ -1,14 +1,14 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { TextInput, TextInputProps } from "./TextInput";
+import React from 'react';
+import { Meta, Story } from '@storybook/react';
+import { TextInput, TextInputProps } from '.';
 
 const meta: Meta = {
-  title: "components/TextInput",
+  title: 'components/TextInput',
   component: TextInput,
   argTypes: {
     children: {
       control: {
-        type: "text",
+        type: 'text',
       },
     },
   },
@@ -19,12 +19,26 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<TextInputProps> = (args) => (
-  <TextInput {...args} label="label" />
-);
+const Template: Story<TextInputProps> = (args) => <TextInput {...args} />;
 
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
-
 Default.args = {};
+
+export const Label = Template.bind({});
+Label.args = {
+  label: 'label',
+};
+
+export const PrefixPlaceholder = Template.bind({});
+PrefixPlaceholder.storyName = 'Prefix and Placeholder';
+PrefixPlaceholder.args = {
+  label: 'label',
+  prefix: '$',
+  placeholder: '0.00',
+};
+
+export const DynamicValue = Template.bind({});
+DynamicValue.args = {
+  label: 'label',
+  value: 'Dynamic value',
+};
