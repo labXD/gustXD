@@ -1,17 +1,19 @@
 {
-  "name": "@labxd/gust",
-  "module": "dist/gust.esm.js",
+  "name": "@labxd/gustxd",
+  "module": "dist/gustxd.esm.js",
+  "description": "UI react components with Tailwind CSS in mind.",
   "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "presets.js"
   ],
   "exports": {
     ".": "./dist/index.js",
-    "./styles": "./dist/gust.cjs.development.css"
+    "./styles": "./dist/gustxd.cjs.production.min.css",
+    "./tailwind": "./presets.js"
   },
   "engines": {
     "node": ">=14"
@@ -45,7 +47,7 @@
     "@storybook/react": "6.5.9",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
-    "autoprefixer": "10.4.7",
+    "autoprefixer": "^10.4.7",
     "babel-loader": "8.2.5",
     "chromatic": "6.6.3",
     "classnames": "2.3.1",
@@ -67,15 +69,16 @@
   },
   "size-limit": [
     {
-      "path": "dist/primitives.cjs.production.min.js",
+      "path": "dist/gustxd.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/primitives.esm.js",
+      "path": "dist/gustxd.esm.js",
       "limit": "10 KB"
     }
   ],
   "dependencies": {
-    "@headlessui/react": "^1.6.4"
+    "@headlessui/react": "^1.6.4",
+    "@tailwindcss/forms": "^0.5.2"
   }
 }
