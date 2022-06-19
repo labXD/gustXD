@@ -6,7 +6,7 @@
     },
     {
       "name": "🚀 website",
-      "path": "apps"
+      "path": "apps/website"
     },
     {
       "name": "📦 @labxd/gust",

@@ -1,9 +1,9 @@
-const postcss = require('rollup-plugin-postcss');
-const autoprefixer = require('autoprefixer');
-const tailwindcss = require('tailwindcss');
-const cssnano = require('cssnano');
+const postcss = require("rollup-plugin-postcss");
+const autoprefixer = require("autoprefixer");
+const tailwindcss = require("tailwindcss");
+const cssnano = require("cssnano");
 
-const tailwindConfig = require('./tailwind.config.js');
+const tailwindConfig = require("./tailwind.config.js");
 
 module.exports = {
   rollup(config) {
@@ -14,7 +14,7 @@ module.exports = {
           autoprefixer(),
           cssnano({
             preset: [
-              'default',
+              "default",
               { normalizeWhitespace: false, discardComments: true },
             ],
           }),

@@ -1,4 +1,1 @@
-# Website
-
-- nextjs with typescript
-- tailwindcss, postcss, autoprefixer
+# `@labXD/gustXD`
