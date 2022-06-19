@@ -28,6 +28,8 @@ export const TextInput: React.FC<TextInputProps> = ({
     'text-gray-700'
   );
 
+  const labelClassNames = cn('text-left');
+
   const prefixWrapperClassNames = cn(
     'absolute',
     'flex',
@@ -63,7 +65,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   return (
     <div className={outerClassNames}>
       <label className={labelWrapperClassNames}>
-        <div>{label}</div>
+        <div className={labelClassNames}>{label}</div>
         <div className={inputWrapperClassNames}>
           <div className={prefixWrapperClassNames}>
             {prefix && <span className={prefixClassNames}>{prefix}</span>}
