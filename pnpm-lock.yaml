@@ -38,7 +38,7 @@ importers:
       '@docusaurus/module-type-aliases': 2.0.0-beta.21
       '@docusaurus/preset-classic': 2.0.0-beta.21
       '@docusaurus/types': ^2.0.0-beta.21
-      '@labxd/gust': '*'
+      '@labxd/gustxd': '*'
       '@mdx-js/react': ^1.6.22
       '@tsconfig/docusaurus': ^1.0.5
       '@types/node': ^18.0.0
@@ -53,7 +53,7 @@ importers:
     dependencies:
       '@docusaurus/core': 2.0.0-beta.21_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/preset-classic': 2.0.0-beta.21_3tgeifm2vmwrlpqlopppsnjtcu
-      '@labxd/gust': link:../../packages/gust
+      '@labxd/gustxd': link:../../packages/gustxd
       '@mdx-js/react': 1.6.22_react@17.0.2
       autoprefixer: 10.4.7_postcss@8.4.14
       clsx: 1.1.1
@@ -69,7 +69,7 @@ importers:
       '@types/node': 18.0.0
       typescript: 4.7.4
 
-  packages/gust:
+  packages/gustxd:
     specifiers:
       '@babel/core': 7.18.5
       '@headlessui/react': ^1.6.4
@@ -720,7 +720,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.17.12
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.17.12_@babel+core@7.12.9
 
@@ -4937,7 +4937,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.11.41
+      '@types/node': 18.0.0
     dev: true
 
   /@types/graceful-fs/4.1.5:
@@ -5042,12 +5042,13 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 16.11.41
+      '@types/node': 18.0.0
       form-data: 3.0.1
     dev: true
 
   /@types/node/16.11.41:
     resolution: {integrity: sha512-mqoYK2TnVjdkGk8qXAVGc/x9nSaTpSrFaGFm43BUH3IdoBV0nta6hYaGmdOvIMlbHJbUEVen3gvwpwovAZKNdQ==}
+    dev: true
 
   /@types/node/17.0.45:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
@@ -5217,7 +5218,7 @@ packages:
   /@types/webpack-sources/3.2.0:
     resolution: {integrity: sha512-Ft7YH3lEVRQ6ls8k4Ff1oB4jN6oy/XmU6tQISKdhfh+1mR+viZFphS6WL0IrtDOzvefmJg5a0s7ZQoRXwqTEFg==}
     dependencies:
-      '@types/node': 16.11.41
+      '@types/node': 18.0.0
       '@types/source-list-map': 0.1.2
       source-map: 0.7.4
     dev: true
@@ -5225,7 +5226,7 @@ packages:
   /@types/webpack/4.41.32:
     resolution: {integrity: sha512-cb+0ioil/7oz5//7tZUSwbrSAN/NWHrQylz5cW8G0dWTcF/g+/dSdMlKVZspBYuMAN1+WnwHrkxiRrLcwd0Heg==}
     dependencies:
-      '@types/node': 16.11.41
+      '@types/node': 18.0.0
       '@types/tapable': 1.0.8
       '@types/uglify-js': 3.16.0
       '@types/webpack-sources': 3.2.0
@@ -12278,7 +12279,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.11.41
+      '@types/node': 18.0.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
 

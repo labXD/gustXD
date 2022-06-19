@@ -7,7 +7,7 @@ function HomepageHeader() {
   return (
     <header className="pt-5 flex align-middle justify-centerv h-full">
       <div className="container">
-        <h1 className="hero__title">&#64;{siteConfig.title}/gust</h1>
+        <h1 className="hero__title">&#64;{siteConfig.title}/gustXD</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
     </header>

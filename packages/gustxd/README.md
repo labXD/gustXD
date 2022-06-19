@@ -1,10 +1,10 @@
-# `@labxd/gust`
+# `@labXD/gustXD`
 
 ## Setup
 
 ```sh
 
-npm install @labxd/gust
+npm install @labxd/gustxd
 
 ```
 
@@ -13,9 +13,9 @@ Add the preset and directory path to `tailwind.config.js`
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [require('@labxd/gust/tailwind')],
+  presets: [require('@labxd/gustxd/tailwind')],
   content: [
-    'node_modules/@labxd/gust/dist/**/*.{js,ts,jsx,tsx}',
+    'node_modules/@labxd/gustxd/dist/**/*.{js,ts,jsx,tsx}',
     ...
   ],
 };

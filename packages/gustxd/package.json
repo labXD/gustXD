@@ -1,6 +1,7 @@
 {
-  "name": "@labxd/gust",
-  "module": "dist/gust.esm.js",
+  "name": "@labxd/gustxd",
+  "module": "dist/gustxd.esm.js",
+  "description": "UI react components with Tailwind CSS in mind.",
   "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,7 +12,7 @@
   ],
   "exports": {
     ".": "./dist/index.js",
-    "./styles": "./dist/gust.cjs.production.min.css",
+    "./styles": "./dist/gustxd.cjs.production.min.css",
     "./tailwind": "./presets.js"
   },
   "engines": {
@@ -68,11 +69,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/gust.cjs.production.min.js",
+      "path": "dist/gustxd.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/gust.esm.js",
+      "path": "dist/gustxd.esm.js",
       "limit": "10 KB"
     }
   ],

@@ -55,6 +55,11 @@ const config = {
         },
         items: [
           {
+            to: "docs",
+            label: "gustXD",
+            position: "left",
+          },
+          {
             href: "https://github.com/labXD/gustXD",
             label: "GitHub",
             position: "right",
