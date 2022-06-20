@@ -52,6 +52,7 @@ Default.args = {
   name: "group",
   label: "Notifications",
   description: "How do you prefer to receive notifications?",
+  defaultChecked: "sms-1",
 };
 
 export const Inline = Template.bind({});
@@ -61,6 +62,7 @@ Inline.args = {
   label: "Notifications",
   description: "How do you prefer to receive notifications?",
   inline: true,
+  defaultChecked: "sms-1",
 };
 
 export const InlineLabel = Template.bind({});
@@ -70,6 +72,7 @@ InlineLabel.args = {
   label: "Notifications",
   description: "How do you prefer to receive notifications?",
   inlineLabel: true,
+  defaultChecked: "sms-1",
 };
 
 export const RadioOnly = Template.bind({});
@@ -78,4 +81,5 @@ RadioOnly.args = {
   name: "group-4",
   label: "Notifications",
   inline: true,
+  defaultChecked: "sms-1",
 };
