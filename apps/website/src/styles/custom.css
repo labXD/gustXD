@@ -90,11 +90,11 @@ h1 {
     no-repeat;
 }
 
-.sneak-peak {
+.sneak-peek {
   position: relative;
 }
 
-.sneak-peak::after {
+.sneak-peek::after {
   content: "sneak peak";
   position: absolute;
   top: -8px;
