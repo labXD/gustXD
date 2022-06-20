@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 
 export type CheckboxFieldsetProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   className?: string;
   legend?: string;
 };

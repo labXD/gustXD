@@ -5,6 +5,7 @@ import { Checkbox, CheckboxProps, CheckboxFieldset } from ".";
 const meta: Meta = {
   title: "components/Checkbox",
   component: Checkbox,
+  subcomponents: { CheckboxFieldset },
   argTypes: {
     children: {
       control: {
