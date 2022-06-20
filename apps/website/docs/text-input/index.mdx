@@ -1,0 +1,28 @@
+---
+id: text-input
+title: Text Input
+description: Text input enables the user to enter and edit text within a field.
+tags: [textinput, gustxd, component, react, ui]
+keywords: [textinput, gustxd, component, react, ui]
+---
+
+import { TextInput } from "@labxd/gustxd";
+
+export const TI = ({ children }) => <TextInput label="Label" />;
+
+Text input enables the user to enter and edit text within a field.
+
+<div className="mb-5 p-5 bg-slate-50  shadow">
+  <TI />
+</div>
+
+```typescript
+export type TextInputProps = {
+  placeholder?: string;
+  prefix?: string;
+  label?: string;
+  id?: string;
+  value?: string;
+  className?: string;
+};
+```

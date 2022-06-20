@@ -42,15 +42,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "support_us",
+        content:
+          "<span style='font-weight:600'>gustXD</span>, our TailwindCSS inspired react component library is coming!",
+        backgroundColor: "rgb(250 204 21)",
+        isCloseable: false,
+      },
       colorMode: {
         defaultMode: "light",
         disableSwitch: true,
       },
       navbar: {
+        style: "dark",
         title: "labXD",
         logo: {
           alt: "labXD logo",
-          src: "img/logo.svg",
+          // src: "img/logo.svg",
+          src: "img/logo-dark.svg",
           srcDark: "img/logo-dark.svg",
         },
         items: [
@@ -58,11 +67,19 @@ const config = {
             to: "docs",
             label: "gustXD",
             position: "left",
+            className: "sneak-peak",
           },
           {
             href: "https://github.com/labXD/gustXD",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: "https://discord.gg/5cp3rQVgGu",
+            position: "right",
+            className: "header-discord-link",
+            "aria-label": "Join our discord",
           },
         ],
       },
