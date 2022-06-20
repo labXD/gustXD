@@ -67,7 +67,7 @@ const config = {
             to: "docs",
             label: "gustXD",
             position: "left",
-            className: "sneak-pekk",
+            className: "sneak-peek",
           },
           {
             href: "https://github.com/labXD/gustXD",
