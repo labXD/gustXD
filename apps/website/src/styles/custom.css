@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #4f46e5;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -38,6 +38,14 @@ html[data-theme="dark"] {
 
 h1 {
   font-size: var(--ifm-h1-font-size);
+}
+
+a {
+  color: var(--ifm-color-primary);
+}
+
+p {
+  line-height: 1.75;
 }
 
 .from-purple {

@@ -21,7 +21,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<CheckboxProps> = (args) => (
-  <CheckboxFieldset legend="sb-checkbox">
+  <CheckboxFieldset screenReader="sb-checkbox">
     <Checkbox {...args} />
   </CheckboxFieldset>
 );

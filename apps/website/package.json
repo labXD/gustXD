@@ -4,6 +4,7 @@
   "private": true,
   "description": "UI react components built with Tailwind CSS in mind",
   "scripts": {
+    "dev": "pnpm start",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

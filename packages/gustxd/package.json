@@ -19,6 +19,7 @@
     "node": ">=14"
   },
   "scripts": {
+    "dev": "pnpm sb",
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",

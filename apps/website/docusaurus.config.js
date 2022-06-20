@@ -27,7 +27,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          breadcrumbs: true,
+          path: "docs/gust",
+          routeBasePath: "gustxd",
           sidebarPath: require.resolve("./sidebars.js"),
+          tagsBasePath: "tags",
         },
         blog: {
           showReadingTime: true,
@@ -45,9 +49,9 @@ const config = {
       announcementBar: {
         id: "support_us",
         content:
-          "<span style='font-weight:600'>gustXD</span>, our TailwindCSS inspired react component library is coming!",
+          "UI Infrastructure is our mission. Feedback <span style=font-style:italic>(github issues or discord)</span> is greatly appreciated!",
         backgroundColor: "rgb(250 204 21)",
-        isCloseable: false,
+        isCloseable: true,
       },
       colorMode: {
         defaultMode: "light",
@@ -64,7 +68,7 @@ const config = {
         },
         items: [
           {
-            to: "docs",
+            to: "gustxd",
             label: "gustXD",
             position: "left",
             className: "sneak-peek",

@@ -1,14 +1,23 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div className="py-10 items-center text-center">
       <div className="container">
-        <h1 className="font-bold text-8xl">gustXD</h1>
-        <p className="text-xl pt-10">{siteConfig.tagline}</p>
+        <div className="text-4xl font-semi">Coming Soon</div>
+        <Link
+          to="gustxd"
+          className="text-indigo-500 hover:no-underline hover:hue-rotate-30 transition-all duration-300 ease-linear"
+        >
+          <h1 className="font-bold text-8xl pt-3">gustXD</h1>
+        </Link>
+        <p className="text-xl pt-10">
+          React UI library developed on Tailwind's utility-first css framework
+        </p>
       </div>
     </div>
   );
