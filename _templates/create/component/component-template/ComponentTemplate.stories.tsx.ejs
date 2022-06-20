@@ -8,7 +8,13 @@ import { <%= component.charAt(0).toUpperCase() + component.slice(1) %>, <%= comp
 const meta: Meta = {
   title: "components/<%= component.charAt(0).toUpperCase() + component.slice(1) %>",
   component: <%= component.charAt(0).toUpperCase() + component.slice(1) %>,
-  argTypes: {},
+  argTypes: {
+    children: {
+        control: {
+          type: "text",
+        },
+      },
+  },
   parameters: {
     controls: { expanded: true },
   },
