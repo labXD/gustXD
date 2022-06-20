@@ -1,0 +1,24 @@
+---
+to: packages/gustxd/src/components/<%= component.charAt(0).toUpperCase() + component.slice(1) %>/<%= component.charAt(0).toUpperCase() + component.slice(1) %>.tsx
+---
+import React from "react";
+import cn from "classnames";
+
+export type <%= component.charAt(0).toUpperCase() + component.slice(1) %>Props = {
+  children?: React.ReactNode;
+  className?: string;
+};
+
+export const <%= component.charAt(0).toUpperCase() + component.slice(1) %>: React.FC<<%= component.charAt(0).toUpperCase() + component.slice(1) %>Props> = ({
+  children,
+  className,
+  ...rest
+}) => {
+  const outerClassNames = cn(className);
+
+  return (
+    <div className={outerClassNames} {...rest}>
+      {children}
+    </div>
+  );
+};

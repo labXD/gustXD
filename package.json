@@ -8,6 +8,10 @@
   "packageManager": "pnpm@7.2.1",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "bootstrap": "corepack enable && pnpm install",
+    "create:component": "npx hygen create component"
+  },
   "devDependencies": {
     "eslint": "^8.18.0",
     "prettier": "^2.7.1",
@@ -21,10 +25,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-markdown": "^2.2.1"
-  },
-  "scripts": {
-    "bootstrap": "corepack enable && pnpm install"
+    "eslint-plugin-markdown": "^2.2.1",
+    "hygen": "^6.2.7"
   },
   "repository": {
     "type": "git",

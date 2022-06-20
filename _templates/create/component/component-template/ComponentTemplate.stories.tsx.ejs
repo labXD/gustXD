@@ -1,0 +1,28 @@
+---
+to: packages/gustxd/src/components/<%= component.charAt(0).toUpperCase() + component.slice(1) %>/<%= component.charAt(0).toUpperCase() + component.slice(1) %>.stories.tsx
+---
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { <%= component.charAt(0).toUpperCase() + component.slice(1) %>, <%= component.charAt(0).toUpperCase() + component.slice(1) %>Props } from ".";
+
+const meta: Meta = {
+  title: "components/<%= component.charAt(0).toUpperCase() + component.slice(1) %>",
+  component: <%= component.charAt(0).toUpperCase() + component.slice(1) %>,
+  argTypes: {
+    children: {
+        control: {
+          type: "text",
+        },
+      },
+  },
+  parameters: {
+    controls: { expanded: true },
+  },
+};
+
+export default meta;
+
+const Template: Story<<%= component.charAt(0).toUpperCase() + component.slice(1) %>Props> = (args) => <<%= component.charAt(0).toUpperCase() + component.slice(1) %> {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {};
