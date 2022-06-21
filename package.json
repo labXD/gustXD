@@ -26,7 +26,8 @@
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-markdown": "^2.2.1",
-    "hygen": "^6.2.7"
+    "hygen": "^6.2.7",
+    "@changesets/cli": "^2.23.0"
   },
   "repository": {
     "type": "git",
