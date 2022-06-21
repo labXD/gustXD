@@ -27,11 +27,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   value,
   ...rest
 }) => {
-  const outerClassNames = cn(className, "flex", "items-start", "relative");
-  const inputWrapperClassNames = cn("flex", "h-5", "items-center", {
+  const outerCls = cn(className, "flex", "items-start", "relative");
+  const inputWrapCls = cn("flex", "h-5", "items-center", {
     "ml-3": flip,
   });
-  const inputClassNames = cn(
+  const inputCls = cn(
     "cursor-pointer",
     "focus:ring-indigo-500",
     "h-4",
@@ -40,29 +40,29 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     "border-gray-300",
     "rounded"
   );
-  const labelContentWrapperClassNames = cn("text-sm", {
+  const labelWrapCls = cn("text-sm", {
     "ml-3": !flip,
     "min-w-0": flip,
     "flex-1": flip,
   });
 
-  const labelClassNames = cn("cursor-pointer", "font-medium text-gray-700");
-  const detailClassNames = cn("text-gray-500");
+  const labelCls = cn("cursor-pointer", "font-medium text-gray-700");
+  const detailCls = cn("text-gray-500");
 
   const LabelContent = () => {
     return (
-      <div className={labelContentWrapperClassNames}>
+      <div className={labelWrapCls}>
         {label && (
-          <label htmlFor={id} className={labelClassNames}>
+          <label htmlFor={id} className={labelCls}>
             {label}
           </label>
         )}
         {inline ? (
-          <span className={detailClassNames}>
+          <span className={detailCls}>
             <span className="sr-only">{label}</span> {children}
           </span>
         ) : typeof children == "string" ? (
-          <p className={detailClassNames}>{children}</p>
+          <p className={detailCls}>{children}</p>
         ) : (
           children
         )}
@@ -71,14 +71,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   };
   return (
     <>
-      <div className={outerClassNames}>
+      <div className={outerCls}>
         {flip && (label || children) && <LabelContent />}
-        <div className={inputWrapperClassNames}>
+        <div className={inputWrapCls}>
           <input
             id={id}
             value={value}
             type="checkbox"
-            className={inputClassNames}
+            className={inputCls}
             defaultChecked={defaultChecked}
             onChange={onChange}
             {...rest}

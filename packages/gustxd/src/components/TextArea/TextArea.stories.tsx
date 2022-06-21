@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Select, SelectProps } from ".";
+import { TextArea, TextAreaProps } from ".";
 
 const meta: Meta = {
-  title: "Forms/Select",
-  component: Select,
+  title: "Forms/TextArea",
+  component: TextArea,
   parameters: {
     controls: { expanded: true },
   },
@@ -12,11 +12,11 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<SelectProps> = (args) => <Select {...args} />;
+const Template: Story<TextAreaProps> = (args) => <TextArea {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  id: "1",
-  options: ["one", "two"],
-  label: "Choices",
+  id: "id",
+  label: "label",
+  defaultValue: "default value",
 };

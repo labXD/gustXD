@@ -1,60 +1,48 @@
 import React from "react";
 import cn from "classnames";
 
-export type SelectProps = {
-  children?: React.ReactNode;
+export type TextAreaProps = {
   className?: string;
   defaultValue?: string;
   label?: string;
   id: string;
-  options: string[];
 };
 
-export const Select: React.FC<SelectProps> = ({
-  children,
+export const TextArea: React.FC<TextAreaProps> = ({
   className,
   defaultValue,
   label,
   id,
-  options,
   ...rest
 }) => {
   const outerCls = cn(className);
-
   const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm");
   const labelCls = cn("text-left");
-  const selectCls = cn(
+  const textAreaCls = cn(
     "block",
     "border-gray-300",
     "focus:border-indigo-500",
-    "focus:outline-none",
     "focus:ring-indigo-500",
-    "pl-3",
-    "pr-10",
-    "py-2",
     "rounded-md",
+    "shadow-sm",
     "sm:text-sm",
-    "text-base",
-    "w-full",
-    { "mt-1": label }
+    "w-full"
   );
-
   return (
     <>
       <div className={outerCls}>
         <label className={labelWrapCls}>
           <div className={labelCls}>{label}</div>
-          <select
-            id={id}
-            name={id}
-            className={selectCls}
-            defaultValue={defaultValue}
-            {...rest}
-          >
-            {options.map((item, index) => (
-              <option key={index}>{item}</option>
-            ))}
-          </select>
+          <div className={cn({ "mt-1": label })}>
+            <textarea
+              rows={4}
+              name={id}
+              id={id}
+              className={textAreaCls}
+              defaultValue={defaultValue}
+              {...rest}
+            />
+          </div>
         </label>
       </div>
     </>
