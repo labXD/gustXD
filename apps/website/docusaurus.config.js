@@ -27,7 +27,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          breadcrumbs: true,
+          path: "docs/gust",
+          routeBasePath: "gustxd",
           sidebarPath: require.resolve("./sidebars.js"),
+          tagsBasePath: "tags",
         },
         blog: {
           showReadingTime: true,
@@ -42,27 +46,44 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "support_us",
+        content:
+          "UI Infrastructure is our mission. Feedback <span style=font-style:italic>(github issues or discord)</span> is greatly appreciated!",
+        backgroundColor: "rgb(250 204 21)",
+        isCloseable: true,
+      },
       colorMode: {
         defaultMode: "light",
         disableSwitch: true,
       },
       navbar: {
+        style: "dark",
         title: "labXD",
         logo: {
           alt: "labXD logo",
-          src: "img/logo.svg",
+          // src: "img/logo.svg",
+          src: "img/logo-dark.svg",
           srcDark: "img/logo-dark.svg",
         },
         items: [
           {
-            to: "docs",
+            to: "gustxd",
             label: "gustXD",
             position: "left",
+            className: "sneak-peek",
           },
           {
             href: "https://github.com/labXD/gustXD",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: "https://discord.gg/5cp3rQVgGu",
+            position: "right",
+            className: "header-discord-link",
+            "aria-label": "Join our discord",
           },
         ],
       },

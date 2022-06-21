@@ -1,0 +1,54 @@
+---
+id: chexkbox
+title: Checkbox
+description: Checkboxes allow the user to select one or more items.
+tags: [checkbox, gustxd, component, react, ui]
+keywords: [checkbox, gustxd, component, react, ui]
+---
+
+import { Checkbox, CheckboxFieldSet } from "@labxd/gustxd";
+
+export const CB = () => (
+  <CheckboxFieldset sr="checkbox-group">
+    <Checkbox id="default-0" label="I can see the difference">
+      If we wanted to present more information than what a label woul allow,
+      using this detail section will size the content correctly.
+    </Checkbox>
+  </CheckboxFieldset>
+);
+
+Checkboxes allow the user to select one or more items.
+
+<div className="mb-5 p-5 bg-slate-50  shadow">
+  <CB />
+</div>
+
+```typescript
+import { Checkbox, CheckboxFieldset } from "@labxd/gustxd";
+...
+<CheckboxFieldset sr="checkbox-group">
+    <Checkbox
+        id="default-0"
+        label="I can see the difference">
+              If we wanted to present more information than what a label woul allow,
+              using this detail section will size the content correctly.
+    </Checkbox>
+</CheckboxFieldset>
+```
+
+## API
+
+```typescript
+export type CheckboxProps = {
+  className?: string;
+  checked?: boolean;
+  children?: string | React.ReactNode;
+  defaultChecked?: boolean;
+  flip?: boolean;
+  id: string;
+  inline?: boolean;
+  onChange?: () => void;
+  label?: string;
+  value?: string;
+};
+```
