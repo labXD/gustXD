@@ -7,10 +7,10 @@ const meta: Meta = {
   component: Typography,
   argTypes: {
     children: {
-        control: {
-          type: "text",
-        },
+      control: {
+        type: "text",
       },
+    },
   },
   parameters: {
     controls: { expanded: true },
