@@ -16,6 +16,8 @@ export const <%= component.charAt(0).toUpperCase() + component.slice(1) %>: Reac
 }) => {
   const outerCls = cn(className);
 
+  // console.log([].sort());
+  
   return (<>
     <div className={outerCls} {...rest}>
       {children}
