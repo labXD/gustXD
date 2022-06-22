@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { TextArea, TextAreaProps } from ".";
 
 const meta: Meta = {
-  title: "Forms/TextArea",
+  title: "Components/TextArea",
   component: TextArea,
   parameters: {
     controls: { expanded: true },

@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { RadioButton, RadioButtonProps, RadioButtonGroup } from ".";
 
 const meta: Meta = {
-  title: "Forms/Radio Button",
+  title: "Components/Radio Button",
   component: RadioButton,
   subcomponents: { RadioButtonGroup },
   argTypes: {},

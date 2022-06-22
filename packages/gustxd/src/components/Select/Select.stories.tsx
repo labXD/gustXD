@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { Select, SelectProps } from ".";
 
 const meta: Meta = {
-  title: "Forms/Select",
+  title: "Components/Select",
   component: Select,
   parameters: {
     controls: { expanded: true },
