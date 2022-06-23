@@ -1,10 +1,9 @@
 ---
 name: Feature Discovery
 about: Proposing a new feature
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 Checklist
@@ -17,6 +16,10 @@ Checklist
 ## Use Case
 
 ## API Structure
+
+```typescript
+
+```
 
 ## Implementation details
 

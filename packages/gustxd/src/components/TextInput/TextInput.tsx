@@ -19,18 +19,13 @@ export const TextInput: React.FC<TextInputProps> = ({
   value,
   ...rest
 }) => {
-  const outerClassNames = cn(className);
+  const outerCls = cn(className);
 
-  const labelWrapperClassNames = cn(
-    "block",
-    "font-medium",
-    "text-sm",
-    "text-gray-700"
-  );
+  const labelWrapCls = cn("block", "font-medium", "text-sm", "text-gray-700");
 
-  const labelClassNames = cn("text-left");
+  const labelCls = cn("text-left");
 
-  const prefixWrapperClassNames = cn(
+  const prefixWrapCls = cn(
     "absolute",
     "flex",
     "inset-y-0",
@@ -40,16 +35,11 @@ export const TextInput: React.FC<TextInputProps> = ({
     "pointer-events-none"
   );
 
-  const prefixClassNames = cn("text-gray-500", "sm:text-sm");
+  const prefixCls = cn("text-gray-500", "sm:text-sm");
 
-  const inputWrapperClassNames = cn(
-    "mt-1",
-    "relative",
-    "rounded-md",
-    "shadow-sm"
-  );
+  const inputWrapCls = cn("mt-1", "relative", "rounded-md", "shadow-sm");
 
-  const inputClassNames = cn(
+  const inputCls = cn(
     "border-gray-300",
     "block w-full",
     "focus:ring-indigo-500",
@@ -63,17 +53,17 @@ export const TextInput: React.FC<TextInputProps> = ({
     }
   );
   return (
-    <div className={outerClassNames}>
-      <label className={labelWrapperClassNames}>
-        <div className={labelClassNames}>{label}</div>
-        <div className={inputWrapperClassNames}>
-          <div className={prefixWrapperClassNames}>
-            {prefix && <span className={prefixClassNames}>{prefix}</span>}
+    <div className={outerCls}>
+      <label className={labelWrapCls}>
+        <div className={labelCls}>{label}</div>
+        <div className={inputWrapCls}>
+          <div className={prefixWrapCls}>
+            {prefix && <span className={prefixCls}>{prefix}</span>}
           </div>
           <input
             type="text"
             id={id}
-            className={inputClassNames}
+            className={inputCls}
             placeholder={placeholder}
             value={value}
             {...rest}

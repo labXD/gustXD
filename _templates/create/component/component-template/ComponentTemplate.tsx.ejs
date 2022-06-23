@@ -14,11 +14,13 @@ export const <%= component.charAt(0).toUpperCase() + component.slice(1) %>: Reac
   className,
   ...rest
 }) => {
-  const outerClassNames = cn(className);
+  const outerCls = cn(className);
 
-  return (
-    <div className={outerClassNames} {...rest}>
+  // console.log([].sort());
+  
+  return (<>
+    <div className={outerCls} {...rest}>
       {children}
     </div>
-  );
+  </>);
 };
