@@ -1,6 +1,8 @@
 # `@labXD/gustXD`
 
-## Setup
+gustXD is a react UI component library that utilizes Tailwind CSS.
+
+## Installation
 
 ```sh
 
@@ -8,7 +10,8 @@ npm install @labxd/gustxd
 
 ```
 
-Add the preset and directory path to `tailwind.config.js`
+Add our preset `@labxd/gustxd/tailwind` will provide the tailwind configurations
+that Add the preset and directory path to `tailwind.config.js`
 
 ```js
 /** @type {import('tailwindcss').Config} */

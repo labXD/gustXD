@@ -15,8 +15,17 @@ export type BadgeSizes = "xs" | "sm" | "md" | "lg";
 export type BadgeProps = {
   children?: React.ReactNode;
   className?: string;
+  /**
+   * Choose the color scheme for your badge
+   */
   color?: BadgeColors;
+  /**
+   * Specify if you want fully rounded corners
+   */
   rounded?: boolean;
+  /**
+   * Specify the size of the badge.
+   */
   size?: BadgeSizes;
 };
 
