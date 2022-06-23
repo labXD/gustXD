@@ -24,8 +24,6 @@ export const Typography: React.FC<TypographyProps> = ({
   type = "div",
   ...rest
 }) => {
-  // console.log([].sort());
-
   const parseClasses = () => {
     switch (type) {
       case "h1":
