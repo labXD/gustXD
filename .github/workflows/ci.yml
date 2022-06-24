@@ -39,5 +39,5 @@ jobs:
       # - name: Test
       #   run: pnpm run -r test
 
-      - name: Build
-        run: pnpm run -r --if-present --parallel build
+      # - name: Build
+      #   run: pnpm run -r --if-present --parallel build
