@@ -6,6 +6,7 @@ module.exports = {
       parser: "@typescript-eslint/parser",
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
+        "no-unused-vars": ["off"],
       },
     },
   ],

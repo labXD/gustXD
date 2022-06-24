@@ -1,6 +1,6 @@
-import React from "react";
-import cn from "classnames";
 import { Switch } from "@headlessui/react";
+import cn from "classnames";
+import React from "react";
 
 export type ToggleProps = {
   className?: string;

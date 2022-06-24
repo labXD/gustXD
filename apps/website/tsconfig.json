@@ -2,9 +2,11 @@
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
+    "strict": true,
     "jsx": "preserve",
     "baseUrl": ".",
     "resolveJsonModule": true,
-    "types": ["@docusaurus/preset-classic"]
+    "types": ["@docusaurus/preset-classic"],
+    "forceConsistentCasingInFileNames": true
   }
 }

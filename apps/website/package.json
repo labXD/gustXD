@@ -32,6 +32,8 @@
     "@labxd/gustxd": "*"
   },
   "devDependencies": {
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "@docusaurus/module-type-aliases": "2.0.0-beta.21",
     "@tsconfig/docusaurus": "^1.0.5",
     "typescript": "^4.6.4",

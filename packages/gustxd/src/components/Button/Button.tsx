@@ -1,5 +1,5 @@
-import React from "react";
 import cn from "classnames";
+import React from "react";
 
 export type ButtonSizes = "xs" | "sm" | "md" | "lg" | "xl";
 export type ButtonVariants = "primary" | "secondary" | "outlined";
