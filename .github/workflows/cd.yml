@@ -33,9 +33,12 @@ jobs:
       - name: Install pkgs
         run: pnpm i
 
-      - uses: redkubes/docusaurus-deploy-action@v1
-        with:
-          source-folder: apps/website
-          git-user: 41898282+github-actions[bot]@users.noreply.github.com
-          git-password: ${{ secrets.GITHUB_TOKEN }}
-          deployment-branch: gh-pages
+      - name: Setup
+        run: |
+          git config --global user.email 27856297+dependabot-preview[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+          echo "machine github.com login github-actions[bot] password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+
+      - name: Deploy
+        run: pnpm run deploy
+        working-directory: 'apps/website/**'
