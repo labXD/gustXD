@@ -42,9 +42,9 @@ jobs:
           git config --global user.name github-actions[bot]
           echo "machine github.com login github-actions[bot] password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
 
-      # - name: Build UI library
-      #   run: pnpm run build
-      #   working-directory: './packages/gustxd'
+      - name: Build UI library
+        run: pnpm run build
+        working-directory: './packages/gustxd'
 
       - name: Build
         run: pnpm run build
