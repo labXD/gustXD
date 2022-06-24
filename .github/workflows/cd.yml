@@ -42,5 +42,5 @@ jobs:
           echo "machine github.com login github-actions[bot] password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
 
       - name: Deploy
-        run: pnpm run deploy
+        run: pnpm run deploy:ci
         working-directory: './apps/website'
