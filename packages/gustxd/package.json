@@ -11,7 +11,8 @@
   },
   "files": [
     "dist",
-    "presets.js"
+    "presets.js",
+    "README.md"
   ],
   "exports": {
     ".": "./dist/index.js",
@@ -49,6 +50,7 @@
     "@storybook/builder-webpack5": "6.5.9",
     "@storybook/manager-webpack5": "6.5.9",
     "@storybook/react": "6.5.9",
+    "@storybook/theming": "6.5.9",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "autoprefixer": "^10.4.7",
@@ -69,7 +71,10 @@
     "tsdx": "0.14.1",
     "tslib": "2.4.0",
     "typescript": "4.7.4",
-    "webpack": "5.73.0"
+    "webpack": "5.73.0",
+    "storybook-dark-mode": "^1.1.0",
+    "@storybook/addon-docs": "6.5.9",
+    "clsx": "^1.1.1"
   },
   "size-limit": [
     {

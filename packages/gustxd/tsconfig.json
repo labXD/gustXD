@@ -18,6 +18,11 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "../.storybook/*.tsx"
+  ],
   "exclude": ["node_modules", "*.stories.*"]
 }
