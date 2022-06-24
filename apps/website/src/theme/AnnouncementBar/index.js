@@ -1,8 +1,9 @@
-import React from "react";
-import clsx from "clsx";
-import { useThemeConfig, useAnnouncementBar } from "@docusaurus/theme-common";
+import { useAnnouncementBar, useThemeConfig } from "@docusaurus/theme-common";
 import { translate } from "@docusaurus/Translate";
 import IconClose from "@theme/IconClose";
+import clsx from "clsx";
+import React from "react";
+
 import styles from "./styles.module.css";
 export default function AnnouncementBar() {
   const { isActive, close } = useAnnouncementBar();

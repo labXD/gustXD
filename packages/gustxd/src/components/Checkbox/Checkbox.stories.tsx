@@ -1,6 +1,7 @@
-import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Checkbox, CheckboxProps, CheckboxFieldset } from ".";
+import React from "react";
+
+import { Checkbox, CheckboxFieldset, CheckboxProps } from ".";
 
 const meta: Meta = {
   title: "Components/Checkbox",

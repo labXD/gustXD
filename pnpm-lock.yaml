@@ -48,6 +48,8 @@ importers:
       '@mdx-js/react': ^1.6.22
       '@tsconfig/docusaurus': ^1.0.5
       '@types/node': ^18.0.0
+      '@types/react': ^18.0.14
+      '@types/react-dom': ^18.0.5
       autoprefixer: ^10.4.7
       clsx: ^1.1.1
       postcss: ^8.4.14
@@ -58,7 +60,7 @@ importers:
       typescript: ^4.6.4
     dependencies:
       '@docusaurus/core': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
-      '@docusaurus/preset-classic': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
+      '@docusaurus/preset-classic': 2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734
       '@headlessui/react': 1.6.5_biqbaboplfbrettd7655fr4n2y
       '@labxd/gustxd': link:../../packages/gustxd
       '@mdx-js/react': 1.6.22_react@18.2.0
@@ -75,6 +77,8 @@ importers:
       '@docusaurus/types': 2.0.0-beta.21_biqbaboplfbrettd7655fr4n2y
       '@tsconfig/docusaurus': 1.0.6
       '@types/node': 18.0.0
+      '@types/react': 18.0.14
+      '@types/react-dom': 18.0.5
       typescript: 4.7.4
 
   packages/gustxd:
@@ -1863,7 +1867,7 @@ packages:
     resolution: {integrity: sha512-bh5IskwkkodbvC0FzSg1AxMykfDl95hebEKwxNoq4e5QaGzOXSBgW8+jnMFZ7JU4sTBiB04vZWoUSzNrPboLZA==}
     dev: false
 
-  /@docsearch/react/3.1.0_biqbaboplfbrettd7655fr4n2y:
+  /@docsearch/react/3.1.0_twyhzqqpkwvvgrmyeapdo6i4my:
     resolution: {integrity: sha512-bjB6ExnZzf++5B7Tfoi6UXgNwoUnNOfZ1NyvnvPhWgCMy5V/biAtLL4o7owmZSYdAKeFSvZ5Lxm0is4su/dBWg==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -1872,6 +1876,7 @@ packages:
     dependencies:
       '@algolia/autocomplete-core': 1.6.3
       '@docsearch/css': 3.1.0
+      '@types/react': 18.0.14
       algoliasearch: 4.13.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -2151,7 +2156,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
 
-  /@docusaurus/plugin-debug/2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q:
+  /@docusaurus/plugin-debug/2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734:
     resolution: {integrity: sha512-P54J4q4ecsyWW0Jy4zbimSIHna999AfbxpXGmF1IjyHrjoA3PtuakV1Ai51XrGEAaIq9q6qMQkEhbUd3CffGAw==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -2163,7 +2168,7 @@ packages:
       fs-extra: 10.1.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-json-view: 1.21.3_biqbaboplfbrettd7655fr4n2y
+      react-json-view: 1.21.3_twyhzqqpkwvvgrmyeapdo6i4my
       tslib: 2.4.0
     transitivePeerDependencies:
       - '@parcel/css'
@@ -2272,7 +2277,7 @@ packages:
       - webpack-cli
     dev: false
 
-  /@docusaurus/preset-classic/2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q:
+  /@docusaurus/preset-classic/2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734:
     resolution: {integrity: sha512-KvBnIUu7y69pNTJ9UhX6SdNlK6prR//J3L4rhN897tb8xx04xHHILlPXko2Il+C3Xzgh3OCgyvkoz9K6YlFTDw==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -2283,13 +2288,13 @@ packages:
       '@docusaurus/plugin-content-blog': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/plugin-content-docs': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/plugin-content-pages': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
-      '@docusaurus/plugin-debug': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
+      '@docusaurus/plugin-debug': 2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734
       '@docusaurus/plugin-google-analytics': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/plugin-google-gtag': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/plugin-sitemap': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/theme-classic': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/theme-common': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
-      '@docusaurus/theme-search-algolia': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
+      '@docusaurus/theme-search-algolia': 2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
@@ -2398,14 +2403,14 @@ packages:
       - vue-template-compiler
       - webpack-cli
 
-  /@docusaurus/theme-search-algolia/2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q:
+  /@docusaurus/theme-search-algolia/2.0.0-beta.21_l6wbhsyvdbgudx6kx2pdcby734:
     resolution: {integrity: sha512-T1jKT8MVSSfnztSqeebUOpWHPoHKtwDXtKYE0xC99JWoZ+mMfv8AFhVSoSddn54jLJjV36mxg841eHQIySMCpQ==}
     engines: {node: '>=16.14'}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
     dependencies:
-      '@docsearch/react': 3.1.0_biqbaboplfbrettd7655fr4n2y
+      '@docsearch/react': 3.1.0_twyhzqqpkwvvgrmyeapdo6i4my
       '@docusaurus/core': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
       '@docusaurus/logger': 2.0.0-beta.21
       '@docusaurus/plugin-content-docs': 2.0.0-beta.21_xrxvbtylmve4l2tr3vmmqgfp7q
@@ -16091,7 +16096,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react-json-view/1.21.3_biqbaboplfbrettd7655fr4n2y:
+  /react-json-view/1.21.3_twyhzqqpkwvvgrmyeapdo6i4my:
     resolution: {integrity: sha512-13p8IREj9/x/Ye4WI/JpjhoIwuzEgUAtgJZNBJckfzJt1qyh24BdTm6UQNGnyTq9dapQdrqvquZTo3dz1X6Cjw==}
     peerDependencies:
       react: ^17.0.0 || ^16.3.0 || ^15.5.4
@@ -16102,7 +16107,7 @@ packages:
       react-base16-styling: 0.6.0
       react-dom: 18.2.0_react@18.2.0
       react-lifecycles-compat: 3.0.4
-      react-textarea-autosize: 8.3.4_react@18.2.0
+      react-textarea-autosize: 8.3.4_luyos4mouogwq6z3wafb3re4ce
     transitivePeerDependencies:
       - '@types/react'
       - encoding
@@ -16231,7 +16236,7 @@ packages:
       react: 16.14.0
     dev: true
 
-  /react-textarea-autosize/8.3.4_react@18.2.0:
+  /react-textarea-autosize/8.3.4_luyos4mouogwq6z3wafb3re4ce:
     resolution: {integrity: sha512-CdtmP8Dc19xL8/R6sWvtknD/eCXkQr30dtvC4VmGInhRsfF8X/ihXCq6+9l9qbxmKRiq407/7z5fxE7cVWQNgQ==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -16240,7 +16245,7 @@ packages:
       '@babel/runtime': 7.18.3
       react: 18.2.0
       use-composed-ref: 1.3.0_react@18.2.0
-      use-latest: 1.2.1_react@18.2.0
+      use-latest: 1.2.1_luyos4mouogwq6z3wafb3re4ce
     transitivePeerDependencies:
       - '@types/react'
     dev: false
@@ -19051,7 +19056,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /use-isomorphic-layout-effect/1.1.2_react@18.2.0:
+  /use-isomorphic-layout-effect/1.1.2_luyos4mouogwq6z3wafb3re4ce:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -19060,10 +19065,11 @@ packages:
       '@types/react':
         optional: true
     dependencies:
+      '@types/react': 18.0.14
       react: 18.2.0
     dev: false
 
-  /use-latest/1.2.1_react@18.2.0:
+  /use-latest/1.2.1_luyos4mouogwq6z3wafb3re4ce:
     resolution: {integrity: sha512-xA+AVm/Wlg3e2P/JiItTziwS7FK92LWrDB0p+hgXloIMuVCeJJ8v6f0eeHyPZaJrM+usM1FkFfbNCrJGs8A/zw==}
     peerDependencies:
       '@types/react': '*'
@@ -19072,8 +19078,9 @@ packages:
       '@types/react':
         optional: true
     dependencies:
+      '@types/react': 18.0.14
       react: 18.2.0
-      use-isomorphic-layout-effect: 1.1.2_react@18.2.0
+      use-isomorphic-layout-effect: 1.1.2_luyos4mouogwq6z3wafb3re4ce
     dev: false
 
   /use-sidecar/1.1.2_xomgddwiuoivvarxmuerw32fym:
