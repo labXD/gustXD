@@ -2,14 +2,11 @@ name: CD
 
 on:
   workflow_dispatch:
-  # push:
-  #   paths:
-  #     - 'apps/website/**'
-  #   branches:
-  #     - main
-  pull_request:
+  push:
+    paths:
+      - 'apps/website/**'
     branches:
-      - dev
+      - main
 
 jobs:
   build-n-deploy:
@@ -36,13 +33,14 @@ jobs:
       - name: Install pkgs
         run: pnpm install
 
-      - name: Setup
+      - name: Setup Git
+        # using github actions bot user 
         run: |
           git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
           git config --global user.name github-actions[bot]
           echo "machine github.com login github-actions[bot] password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
 
-      - name: Build UI library
+      - name: Build gustXD
         run: pnpm run build
         working-directory: './packages/gustxd'
 
