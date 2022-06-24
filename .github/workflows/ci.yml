@@ -13,8 +13,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['14.x', '16.x']
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        node: ['16.x']
+        os: [ubuntu-latest]
 
     steps:
       - name: Checkout repo
@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2
         with:
           version: 7
 
@@ -37,7 +37,7 @@ jobs:
         run: pnpm lint
 
       # - name: Test
-      #   run: pnpm run test -r
+      #   run: pnpm run -r test
 
       - name: Build
-        run: pnpm run build -r
+        run: pnpm run -r --if-present --parallel build
