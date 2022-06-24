@@ -27,11 +27,13 @@ jobs:
         with:
           node-version: ${{ env.PROJECT_NODE_VERSION }}
 
-      - name: Install pnpm
-        run: corepack enable
-
       - name: Install pkgs
-        run: pnpm i
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
 
       - name: Setup
         run: |
