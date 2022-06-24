@@ -1,0 +1,43 @@
+name: CD 
+
+on:
+  workflow_dispatch:
+  # push:
+    # paths:
+    #   - 'apps/website/**'
+    # branches:
+    #   - main
+  pull_request:
+    paths:
+      - 'apps/website/**'
+    branches:
+      - dev
+
+jobs:
+  build-n-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get node version
+        run: |
+          echo "PROJECT_NODE_VERSION=$(cat $GITHUB_WORKSPACE/.nvmrc)" >> $GITHUB_ENV
+
+      - name: Setup Node.js version ${{ env.PROJECT_NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.PROJECT_NODE_VERSION }}
+
+      - name: Install pnpm
+        run: corepack enable
+
+      - name: Install pkgs
+        run: pnpm i
+
+      - uses: redkubes/docusaurus-deploy-action@v1
+        with:
+          source-folder: apps/website
+          git-user: 41898282+github-actions[bot]@users.noreply.github.com
+          git-password: ${{ secrets.GITHUB_TOKEN }}
+          deployment-branch: gh-pages
