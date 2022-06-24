@@ -1,6 +1,7 @@
-import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { RadioButton, RadioButtonProps, RadioButtonGroup } from ".";
+import React from "react";
+
+import { RadioButton, RadioButtonGroup, RadioButtonProps } from ".";
 
 const meta: Meta = {
   title: "Components/Radio Button",

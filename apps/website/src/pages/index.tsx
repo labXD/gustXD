@@ -1,10 +1,9 @@
-import React from "react";
+import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
+import React from "react";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <div className="py-10 items-center text-center">
       <div className="container">
@@ -16,7 +15,8 @@ function HomepageHeader() {
           <h1 className="font-bold text-8xl pt-3">gustXD</h1>
         </Link>
         <p className="text-xl pt-10">
-          React UI library developed on Tailwind's utility-first css framework
+          React UI library developed on Tailwind&apos;s utility-first css
+          framework
         </p>
       </div>
     </div>

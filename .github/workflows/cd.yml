@@ -1,0 +1,53 @@
+name: CD 
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'apps/website/**'
+    branches:
+      - main
+
+jobs:
+  build-n-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Get node version
+        run: |
+          echo "PROJECT_NODE_VERSION=$(cat $GITHUB_WORKSPACE/.nvmrc)" >> $GITHUB_ENV
+
+      - name: Setup Node.js version ${{ env.PROJECT_NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.PROJECT_NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
+      - name: Install pkgs
+        run: pnpm install
+
+      - name: Setup Git
+        # using github actions bot user 
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+          echo "machine github.com login github-actions[bot] password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+
+      - name: Build gustXD
+        run: pnpm run build
+        working-directory: './packages/gustxd'
+
+      - name: Build
+        run: pnpm run build
+        working-directory: './apps/website'
+
+      - name: Deploy
+        run: pnpm run deploy:ci
+        working-directory: './apps/website'
