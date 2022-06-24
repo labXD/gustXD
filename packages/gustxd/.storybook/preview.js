@@ -1,7 +1,29 @@
 import "../src/styles/globals.css";
+import { light, dark } from "./xd-theme";
 
-// https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
+import { addParameters } from "@storybook/react";
+
+addParameters({
+  previewTabs: {
+    canvas: {
+      title: "Prototype",
+    },
+  },
+});
+
 export const parameters = {
-  // https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args
+  options: {
+    storySort: {
+      order: ["Welcome", "Getting Started"],
+    },
+  },
   actions: { argTypesRegex: "^on.*" },
+  darkMode: {
+    darkClass: "xd--dark-mode",
+    lightClass: "xd--light-mode",
+    dark: {
+      ...dark,
+    },
+    light: { ...light },
+  },
 };

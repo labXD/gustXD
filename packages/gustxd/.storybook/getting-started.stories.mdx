@@ -1,0 +1,39 @@
+import { GettingStarted } from "./introduction.tsx";
+
+<Meta
+  title="Getting Started"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+<GettingStarted />
+
+A React component library built with Tailwind CSS. It is meant to work with your
+tailwind setup. Install, point, and start using the components.
+
+## Installation
+
+1. Install the package into your project
+2. Add our preset
+   - The preset will merge with your configuration, not override them.
+3. Point tailwind to our components.
+
+```shell
+npm install @labxd/gustxd
+```
+
+```js
+// tailwind.config.js
+
+module.exports = {
+  presets: [require("@labxd/gustxd/tailwind")],
+  content: [
+    "node_modules/@labxd/gustxd/dist/**/*.{js,ts,jsx,tsx}",
+    ...
+  ],
+};
+
+```
