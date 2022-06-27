@@ -2,9 +2,56 @@
 id: gustxd-overview
 title: Overview
 sidebar_position: 1
+hide_title: true
 ---
 
-<span className="text-xl font-bold">gustXD</span> is a React UI library developed
-on Tailwind's utility-first css framework. Just add our presets to <code>
-  tailwind.config.js
-</code> and you're ready to rock!
+import Link from "@docusaurus/Link";
+import Logo from "../../static/img/logo.svg";
+import { Button } from "@labxd/gustxd";
+
+<div className="grid md:grid-cols-[1fr_2fr] sm:grid-cols-1 gap-10 container">
+  <div className="py-10 justify-self-end">
+    <div className="min-w-[7rem]">
+      <Logo />
+    </div>
+  </div>
+  <div className="py-10">
+    <div className="">
+      <div className="before:text-gray-500 before:content-['v0.2.0'] before:absolute before:-top-2 before:left-0 before:text-right relative before:text-base">
+        <hdiv className="font-normal text-6xl">gustXD</hdiv>
+      </div>
+      <div className="pt-5">
+        <Link to="https://62ae2bbb424ee8ba5cad16ce-nokutbkyqd.chromatic.com/?path=/story/welcome--page">
+          Open Storybook
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
+A React component library built with Tailwind CSS. It is meant to work with your
+tailwind setup. Install, point, and start using the components.
+
+## Installation
+
+```shell
+npm install @labxd/gustxd
+```
+
+### Add our preset
+
+The preset will merge with your configuration, not override them. Point tailwind
+to our components.
+
+```js
+// tailwind.config.js
+
+module.exports = {
+  presets: [require("@labxd/gustxd/tailwind")],
+  content: [
+    "node_modules/@labxd/gustxd/dist/**/*.{js,ts,jsx,tsx}",
+    ...
+  ],
+};
+
+```

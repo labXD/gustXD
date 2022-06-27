@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon-16.png",
   organizationName: "labXD", // Usually your GitHub org/user name.
   projectName: "gustXD",
   i18n: {
@@ -63,8 +63,8 @@ const config = {
         logo: {
           alt: "labXD logo",
           // src: "img/logo.svg",
-          src: "img/logo-dark.svg",
-          srcDark: "img/logo-dark.svg",
+          src: "img/logo.svg",
+          srcDark: "img/logo.svg",
         },
         items: [
           {
