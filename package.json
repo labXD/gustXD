@@ -11,7 +11,7 @@
   "scripts": {
     "bootstrap": "corepack enable && pnpm install",
     "create:component": "npx hygen create component",
-    "lint": "eslint --ext .js,.ts,.tsx .",
+    "lint": "pnpm exec eslint --ext .ts,.tsx .",
     "lint:fix": "pnpm run lint --fix"
   },
   "devDependencies": {
