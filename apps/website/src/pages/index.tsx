@@ -2,8 +2,9 @@ import Link from "@docusaurus/Link";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import React from "react";
-import Logo from "../../static/img/logo.svg";
+
 import pkgJson from "../../../../packages/gustxd/package.json";
+import Logo from "../../static/img/logo.svg";
 
 function HomepageHeader() {
   return (
