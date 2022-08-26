@@ -3,6 +3,10 @@ const config = {
   presets: [require("./presets")],
   content: ["./src/**/*.{html,js,tsx,jsx}", ".storybook/introduction.tsx"],
   theme: {
+    fontFamily: {
+      sans: ["Red Hat Text", "sans-serif"],
+      display: ["Red Hat Display", "sans-serif"],
+    },
     extend: {
       keyframes: {
         zip: {
@@ -30,6 +34,6 @@ const config = {
       },
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config
