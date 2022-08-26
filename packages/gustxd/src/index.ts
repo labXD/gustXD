@@ -1,3 +1,3 @@
-import "./styles/globals.css";
+import "./styles/globals.css"
 
-export * from "./components";
+export * from "./components"

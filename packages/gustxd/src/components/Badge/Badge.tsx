@@ -1,5 +1,5 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type BadgeColors =
   | "blue"
@@ -9,25 +9,25 @@ export type BadgeColors =
   | "pink"
   | "purple"
   | "red"
-  | "yellow";
-export type BadgeSizes = "xs" | "sm" | "md" | "lg";
+  | "yellow"
+export type BadgeSizes = "xs" | "sm" | "md" | "lg"
 
 export type BadgeProps = {
-  children?: React.ReactNode;
-  className?: string;
+  children?: React.ReactNode
+  className?: string
   /**
    * Choose the color scheme for your badge
    */
-  color?: BadgeColors;
+  color?: BadgeColors
   /**
    * Specify if you want fully rounded corners
    */
-  rounded?: boolean;
+  rounded?: boolean
   /**
    * Specify the size of the badge.
    */
-  size?: BadgeSizes;
-};
+  size?: BadgeSizes
+}
 
 export const Badge: React.FC<BadgeProps> = ({
   children,
@@ -51,7 +51,7 @@ export const Badge: React.FC<BadgeProps> = ({
       ["text-base px-3.5 py-1"]: size == "md",
       ["text-lg px-4 py-1"]: size == "lg",
     }
-  );
+  )
 
   return (
     <span
@@ -61,5 +61,5 @@ export const Badge: React.FC<BadgeProps> = ({
     >
       {children}
     </span>
-  );
-};
+  )
+}

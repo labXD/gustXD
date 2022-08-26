@@ -1,14 +1,14 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type SelectProps = {
-  children?: React.ReactNode;
-  className?: string;
-  defaultValue?: string;
-  label?: string;
-  id: string;
-  options: string[];
-};
+  children?: React.ReactNode
+  className?: string
+  defaultValue?: string
+  label?: string
+  id: string
+  options: string[]
+}
 
 export const Select: React.FC<SelectProps> = ({
   children,
@@ -19,10 +19,10 @@ export const Select: React.FC<SelectProps> = ({
   options,
   ...rest
 }) => {
-  const outerCls = cn(className);
+  const outerCls = cn(className)
 
-  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm");
-  const labelCls = cn("text-left");
+  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm")
+  const labelCls = cn("text-left")
   const selectCls = cn(
     "block",
     "border-gray-300",
@@ -37,7 +37,7 @@ export const Select: React.FC<SelectProps> = ({
     "text-base",
     "w-full",
     { "mt-1": label }
-  );
+  )
 
   return (
     <>
@@ -58,5 +58,5 @@ export const Select: React.FC<SelectProps> = ({
         </label>
       </div>
     </>
-  );
-};
+  )
+}

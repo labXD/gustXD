@@ -1,7 +1,7 @@
-import { Meta, Story } from "@storybook/react";
-import React from "react";
+import { Meta, Story } from "@storybook/react"
+import React from "react"
 
-import { Badge, BadgeProps } from ".";
+import { Badge, BadgeProps } from "."
 
 const meta: Meta = {
   title: "Components/Badge",
@@ -16,13 +16,13 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
-};
+}
 
-export default meta;
+export default meta
 
-const Template: Story<BadgeProps> = (args) => <Badge {...args} />;
+const Template: Story<BadgeProps> = (args) => <Badge {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   children: "Badge",
-};
+}

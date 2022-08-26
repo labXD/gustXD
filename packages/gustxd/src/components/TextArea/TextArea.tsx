@@ -1,12 +1,12 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type TextAreaProps = {
-  className?: string;
-  defaultValue?: string;
-  label?: string;
-  id: string;
-};
+  className?: string
+  defaultValue?: string
+  label?: string
+  id: string
+}
 
 export const TextArea: React.FC<TextAreaProps> = ({
   className,
@@ -15,9 +15,9 @@ export const TextArea: React.FC<TextAreaProps> = ({
   id,
   ...rest
 }) => {
-  const outerCls = cn(className);
-  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm");
-  const labelCls = cn("text-left");
+  const outerCls = cn(className)
+  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm")
+  const labelCls = cn("text-left")
   const textAreaCls = cn(
     "block",
     "border-gray-300",
@@ -27,7 +27,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
     "shadow-sm",
     "sm:text-sm",
     "w-full"
-  );
+  )
   return (
     <>
       <div className={outerCls}>
@@ -46,5 +46,5 @@ export const TextArea: React.FC<TextAreaProps> = ({
         </label>
       </div>
     </>
-  );
-};
+  )
+}

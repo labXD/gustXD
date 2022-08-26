@@ -1,14 +1,14 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type RadioButtonGroupProps = {
-  className?: string;
-  children?: React.ReactNode;
-  description?: string;
-  inline?: boolean;
-  label?: string;
-  screenReader?: string;
-};
+  className?: string
+  children?: React.ReactNode
+  description?: string
+  inline?: boolean
+  label?: string
+  screenReader?: string
+}
 
 export const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   className,
@@ -18,15 +18,15 @@ export const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   label,
   screenReader,
 }) => {
-  const outerCls = cn(className);
+  const outerCls = cn(className)
 
-  const labelCls = cn("font-medium", "text-base", "text-gray-900");
+  const labelCls = cn("font-medium", "text-base", "text-gray-900")
 
-  const descriptionCls = cn("leading-5", "text-gray-500", "text-sm");
+  const descriptionCls = cn("leading-5", "text-gray-500", "text-sm")
 
   const groupWrapperClassNames = cn("space-y-4", {
     ["sm:flex sm:items-center sm:space-y-0 sm:space-x-10"]: inline,
-  });
+  })
 
   return (
     <>
@@ -41,5 +41,5 @@ export const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
         </fieldset>
       </div>
     </>
-  );
-};
+  )
+}

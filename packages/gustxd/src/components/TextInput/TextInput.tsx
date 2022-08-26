@@ -1,14 +1,14 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type TextInputProps = {
-  placeholder?: string;
-  prefix?: string;
-  label?: string;
-  id?: string;
-  value?: string;
-  className?: string;
-};
+  placeholder?: string
+  prefix?: string
+  label?: string
+  id?: string
+  value?: string
+  className?: string
+}
 
 export const TextInput: React.FC<TextInputProps> = ({
   className,
@@ -19,11 +19,11 @@ export const TextInput: React.FC<TextInputProps> = ({
   value,
   ...rest
 }) => {
-  const outerCls = cn(className);
+  const outerCls = cn(className)
 
-  const labelWrapCls = cn("block", "font-medium", "text-sm", "text-gray-700");
+  const labelWrapCls = cn("block", "font-medium", "text-sm", "text-gray-700")
 
-  const labelCls = cn("text-left");
+  const labelCls = cn("text-left")
 
   const prefixWrapCls = cn(
     "absolute",
@@ -33,11 +33,11 @@ export const TextInput: React.FC<TextInputProps> = ({
     "items-center",
     "pl-3",
     "pointer-events-none"
-  );
+  )
 
-  const prefixCls = cn("text-gray-500", "sm:text-sm");
+  const prefixCls = cn("text-gray-500", "sm:text-sm")
 
-  const inputWrapCls = cn("mt-1", "relative", "rounded-md", "shadow-sm");
+  const inputWrapCls = cn("mt-1", "relative", "rounded-md", "shadow-sm")
 
   const inputCls = cn(
     "border-gray-300",
@@ -51,7 +51,7 @@ export const TextInput: React.FC<TextInputProps> = ({
       "pl-3": !prefix,
       "pl-7": prefix,
     }
-  );
+  )
   return (
     <div className={outerCls}>
       <label className={labelWrapCls}>
@@ -71,5 +71,5 @@ export const TextInput: React.FC<TextInputProps> = ({
         </div>
       </label>
     </div>
-  );
-};
+  )
+}

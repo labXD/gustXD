@@ -1,2 +1,2 @@
 /// <reference types="react" />
-export default function AnnouncementBar(): JSX.Element | null;
+export default function AnnouncementBar(): JSX.Element | null
