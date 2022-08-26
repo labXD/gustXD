@@ -1,18 +1,18 @@
-import cn from "classnames";
-import React from "react";
+import cn from "classnames"
+import React from "react"
 
 export type CheckboxProps = {
-  className?: string;
-  checked?: boolean;
-  children?: string | React.ReactNode;
-  defaultChecked?: boolean;
-  flip?: boolean;
-  id: string;
-  inline?: boolean;
-  onChange?: () => void;
-  label?: string;
-  value?: string;
-};
+  className?: string
+  checked?: boolean
+  children?: string | React.ReactNode
+  defaultChecked?: boolean
+  flip?: boolean
+  id: string
+  inline?: boolean
+  onChange?: () => void
+  label?: string
+  value?: string
+}
 
 export const Checkbox: React.FC<CheckboxProps> = ({
   className,
@@ -27,10 +27,10 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   value,
   ...rest
 }) => {
-  const outerCls = cn(className, "flex", "items-start", "relative");
+  const outerCls = cn(className, "flex", "items-start", "relative")
   const inputWrapCls = cn("flex", "h-5", "items-center", {
     "ml-3": flip,
-  });
+  })
   const inputCls = cn(
     "cursor-pointer",
     "focus:ring-indigo-500",
@@ -39,15 +39,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     "text-indigo-600",
     "border-gray-300",
     "rounded"
-  );
+  )
   const labelWrapCls = cn("text-sm", {
     "ml-3": !flip,
     "min-w-0": flip,
     "flex-1": flip,
-  });
+  })
 
-  const labelCls = cn("cursor-pointer", "font-medium text-gray-700");
-  const detailCls = cn("text-gray-500");
+  const labelCls = cn("cursor-pointer", "font-medium text-gray-700")
+  const detailCls = cn("text-gray-500")
 
   const LabelContent = () => {
     return (
@@ -67,8 +67,8 @@ export const Checkbox: React.FC<CheckboxProps> = ({
           children
         )}
       </div>
-    );
-  };
+    )
+  }
   return (
     <>
       <div className={outerCls}>
@@ -87,5 +87,5 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         {!flip && (label || children) && <LabelContent />}
       </div>
     </>
-  );
-};
+  )
+}

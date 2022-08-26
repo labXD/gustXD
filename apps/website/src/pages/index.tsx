@@ -1,10 +1,10 @@
-import Link from "@docusaurus/Link";
+import Link from "@docusaurus/Link"
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import React from "react";
+import Layout from "@theme/Layout"
+import React from "react"
 
-import pkgJson from "../../../../packages/gustxd/package.json";
-import Logo from "../../static/img/logo.svg";
+import pkgJson from "../../../../packages/gustxd/package.json"
+import Logo from "../../static/img/logo.svg"
 
 function HomepageHeader() {
   return (
@@ -27,7 +27,7 @@ function HomepageHeader() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 function LeftSlot() {
   return (
@@ -36,7 +36,7 @@ function LeftSlot() {
         <Logo />
       </div>
     </div>
-  );
+  )
 }
 
 export default function Home() {
@@ -51,5 +51,5 @@ export default function Home() {
         <HomepageHeader />
       </div>
     </Layout>
-  );
+  )
 }

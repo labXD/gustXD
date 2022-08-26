@@ -1,16 +1,16 @@
 {
   "folders": [
     {
-      "name": "✨ gustxd",
-      "path": "."
-    },
-    {
       "name": "🚀 website",
       "path": "apps/website"
     },
     {
       "name": "📦 @labxd/gustxd",
       "path": "packages/gustxd"
+    },
+    {
+      "name": "✨ gustxd",
+      "path": "."
     }
   ],
   "settings": {

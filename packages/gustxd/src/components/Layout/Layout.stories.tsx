@@ -1,11 +1,11 @@
 import { Meta, Story } from "@storybook/react"
 import React from "react"
 
-import { Badge, BadgeProps } from "."
+import { BaseLayout, BaseLayoutProps } from "."
 
 const meta: Meta = {
-  title: "Components/Badge",
-  component: Badge,
+  title: "components/Layout",
+  component: BaseLayout,
   argTypes: {
     children: {
       control: {
@@ -15,14 +15,16 @@ const meta: Meta = {
   },
   parameters: {
     controls: { expanded: true },
+    layout: "fullscreen",
   },
 }
 
 export default meta
 
-const Template: Story<BadgeProps> = (args) => <Badge {...args} />
+const Template: Story<BaseLayoutProps> = (args) => <BaseLayout {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  children: "Badge",
+  children: <div>center</div>,
+  className: "bg-red-100",
 }

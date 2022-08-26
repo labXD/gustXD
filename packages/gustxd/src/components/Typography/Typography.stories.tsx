@@ -1,7 +1,7 @@
-import { Meta, Story } from "@storybook/react";
-import React from "react";
+import { Meta, Story } from "@storybook/react"
+import React from "react"
 
-import { Typography, TypographyProps } from ".";
+import { Typography, TypographyProps } from "."
 
 const meta: Meta = {
   title: "components/Typography",
@@ -16,11 +16,11 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
-};
+}
 
-export default meta;
+export default meta
 
-const Template: Story<TypographyProps> = (args) => <Typography {...args} />;
+const Template: Story<TypographyProps> = (args) => <Typography {...args} />
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = Template.bind({})
+Default.args = {}

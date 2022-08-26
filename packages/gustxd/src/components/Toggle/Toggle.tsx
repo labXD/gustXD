@@ -1,18 +1,18 @@
-import { Switch } from "@headlessui/react";
-import cn from "classnames";
-import React from "react";
+import { Switch } from "@headlessui/react"
+import cn from "classnames"
+import React from "react"
 
 export type ToggleProps = {
-  className?: string;
-  checked: boolean;
-  compact?: boolean;
-  description?: string;
-  flip?: boolean;
-  inline?: boolean;
-  onChange(checked: boolean): void;
-  screenReader?: string;
-  label?: string;
-};
+  className?: string
+  checked: boolean
+  compact?: boolean
+  description?: string
+  flip?: boolean
+  inline?: boolean
+  onChange(checked: boolean): void
+  screenReader?: string
+  label?: string
+}
 
 export const Toggle: React.FC<ToggleProps> = ({
   className,
@@ -43,7 +43,7 @@ export const Toggle: React.FC<ToggleProps> = ({
         !compact,
       ["group h-5 items-center justify-center w-10"]: compact,
     }
-  );
+  )
 
   const toggleCls = cn(
     [checked ? "translate-x-5" : "translate-x-0"],
@@ -62,7 +62,7 @@ export const Toggle: React.FC<ToggleProps> = ({
       ["transition"]: !compact,
       ["absolute border border-gray-200 left-0 transition-transform"]: compact,
     }
-  );
+  )
 
   const bgCls = cn(
     checked ? "bg-indigo-600" : "bg-gray-200",
@@ -75,7 +75,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     "rounded-full",
     "transition-colors",
     "w-9"
-  );
+  )
 
   const bgHeightCls = cn(
     "absolute",
@@ -84,13 +84,13 @@ export const Toggle: React.FC<ToggleProps> = ({
     "pointer-events-none",
     "rounded-md",
     "w-full"
-  );
+  )
 
-  const groupCls = cn("flex", "items-center");
+  const groupCls = cn("flex", "items-center")
 
-  const labelCls = cn("font-medium", "text-gray-900", "text-sm");
+  const labelCls = cn("font-medium", "text-gray-900", "text-sm")
 
-  const descriptionCls = cn("text-gray-500", "text-sm", { "ml-1": label });
+  const descriptionCls = cn("text-gray-500", "text-sm", { "ml-1": label })
 
   const ParseSwitch = () => {
     return (
@@ -109,8 +109,8 @@ export const Toggle: React.FC<ToggleProps> = ({
         )}
         <span aria-hidden="true" className={toggleCls} />
       </Switch>
-    );
-  };
+    )
+  }
 
   if (inline) {
     return (
@@ -122,8 +122,8 @@ export const Toggle: React.FC<ToggleProps> = ({
         </Switch.Label>
         {flip && <ParseSwitch />}
       </Switch.Group>
-    );
+    )
   }
 
-  return <ParseSwitch />;
-};
+  return <ParseSwitch />
+}

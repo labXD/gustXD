@@ -1,7 +1,7 @@
 {
-  "name": "website-gustxd",
-  "version": "0.0.0",
+  "name": "gustxd-website",
   "private": true,
+  "version": "0.0.1-dev",
   "description": "UI react components built with Tailwind CSS in mind",
   "scripts": {
     "dev": "pnpm start",
