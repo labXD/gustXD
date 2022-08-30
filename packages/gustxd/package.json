@@ -56,7 +56,6 @@
     "autoprefixer": "^10.4.7",
     "babel-loader": "8.2.5",
     "chromatic": "6.6.3",
-    "classnames": "2.3.1",
     "cssnano": "^5.1.12",
     "husky": "8.0.1",
     "postcss": "8.4.14",

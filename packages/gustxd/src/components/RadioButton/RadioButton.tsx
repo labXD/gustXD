@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 import { RadioButtonGroup, RadioButtonGroupProps } from "./RadioButton.Group"
@@ -27,9 +27,9 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
   name,
   ...rest
 }) => {
-  const outerCls = cn("flex", "items-start", "relative")
-  const inputWrapCls = cn("flex", "h-5", "items-center")
-  const inputCls = cn(
+  const outerCls = clsx("flex", "items-start", "relative")
+  const inputWrapCls = clsx("flex", "h-5", "items-center")
+  const inputCls = clsx(
     "border-gray-300",
     "cursor-pointer",
     "focus:ring-indigo-500",
@@ -37,7 +37,7 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
     "text-indigo-600",
     "w-4"
   )
-  const labelCls = cn("cursor-pointer", "font-medium", "text-gray-700", {
+  const labelCls = clsx("cursor-pointer", "font-medium", "text-gray-700", {
     ["flex items-center text-sm"]: !inlineLabel,
   })
 

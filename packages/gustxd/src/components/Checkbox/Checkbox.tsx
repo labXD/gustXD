@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type CheckboxProps = {
@@ -27,11 +27,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   value,
   ...rest
 }) => {
-  const outerCls = cn(className, "flex", "items-start", "relative")
-  const inputWrapCls = cn("flex", "h-5", "items-center", {
+  const outerCls = clsx(className, "flex", "items-start", "relative")
+  const inputWrapCls = clsx("flex", "h-5", "items-center", {
     "ml-3": flip,
   })
-  const inputCls = cn(
+  const inputCls = clsx(
     "cursor-pointer",
     "focus:ring-indigo-500",
     "h-4",
@@ -40,14 +40,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     "border-gray-300",
     "rounded"
   )
-  const labelWrapCls = cn("text-sm", {
+  const labelWrapCls = clsx("text-sm", {
     "ml-3": !flip,
     "min-w-0": flip,
     "flex-1": flip,
   })
 
-  const labelCls = cn("cursor-pointer", "font-medium text-gray-700")
-  const detailCls = cn("text-gray-500")
+  const labelCls = clsx("cursor-pointer", "font-medium text-gray-700")
+  const detailCls = clsx("text-gray-500")
 
   const LabelContent = () => {
     return (

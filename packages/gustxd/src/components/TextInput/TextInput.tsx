@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type TextInputProps = {
@@ -19,13 +19,13 @@ export const TextInput: React.FC<TextInputProps> = ({
   value,
   ...rest
 }) => {
-  const outerCls = cn(className)
+  const outerCls = clsx(className)
 
-  const labelWrapCls = cn("block", "font-medium", "text-sm", "text-gray-700")
+  const labelWrapCls = clsx("block", "font-medium", "text-sm", "text-gray-700")
 
-  const labelCls = cn("text-left")
+  const labelCls = clsx("text-left")
 
-  const prefixWrapCls = cn(
+  const prefixWrapCls = clsx(
     "absolute",
     "flex",
     "inset-y-0",
@@ -35,11 +35,11 @@ export const TextInput: React.FC<TextInputProps> = ({
     "pointer-events-none"
   )
 
-  const prefixCls = cn("text-gray-500", "sm:text-sm")
+  const prefixCls = clsx("text-gray-500", "sm:text-sm")
 
-  const inputWrapCls = cn("mt-1", "relative", "rounded-md", "shadow-sm")
+  const inputWrapCls = clsx("mt-1", "relative", "rounded-md", "shadow-sm")
 
-  const inputCls = cn(
+  const inputCls = clsx(
     "border-gray-300",
     "block w-full",
     "focus:ring-indigo-500",

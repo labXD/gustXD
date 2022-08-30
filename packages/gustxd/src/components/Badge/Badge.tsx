@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type BadgeColors =
@@ -37,7 +37,7 @@ export const Badge: React.FC<BadgeProps> = ({
   size = "xs",
   ...rest
 }) => {
-  const outerCls = cn(
+  const outerCls = clsx(
     className,
     "font-medium",
     "inline-flex",
