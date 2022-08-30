@@ -104,7 +104,6 @@ importers:
       autoprefixer: ^10.4.7
       babel-loader: 8.2.5
       chromatic: 6.6.3
-      classnames: 2.3.1
       clsx: ^1.2.1
       cssnano: ^5.1.12
       husky: 8.0.1
@@ -143,7 +142,6 @@ importers:
       autoprefixer: 10.4.7_postcss@8.4.14
       babel-loader: 8.2.5_te6ollfzjcco6mbxjl755ucqke
       chromatic: 6.6.3
-      classnames: 2.3.1
       clsx: 1.2.1
       cssnano: 5.1.12_postcss@8.4.14
       husky: 8.0.1
@@ -7499,10 +7497,6 @@ packages:
       define-property: 0.2.5
       isobject: 3.0.1
       static-extend: 0.1.2
-    dev: true
-
-  /classnames/2.3.1:
-    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
     dev: true
 
   /clean-css/4.2.4:

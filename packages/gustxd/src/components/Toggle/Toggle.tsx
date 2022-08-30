@@ -1,5 +1,5 @@
 import { Switch } from "@headlessui/react"
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type ToggleProps = {
@@ -26,7 +26,7 @@ export const Toggle: React.FC<ToggleProps> = ({
   label,
   ...rest
 }) => {
-  const switchCls = cn(
+  const switchCls = clsx(
     className,
     [checked ? "bg-indigo-600" : "bg-gray-200"],
     "cursor-pointer",
@@ -45,7 +45,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     }
   )
 
-  const toggleCls = cn(
+  const toggleCls = clsx(
     [checked ? "translate-x-5" : "translate-x-0"],
     "bg-white",
     "duration-200",
@@ -64,7 +64,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     }
   )
 
-  const bgCls = cn(
+  const bgCls = clsx(
     checked ? "bg-indigo-600" : "bg-gray-200",
     "absolute",
     "duration-200",
@@ -77,7 +77,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     "w-9"
   )
 
-  const bgHeightCls = cn(
+  const bgHeightCls = clsx(
     "absolute",
     "bg-white",
     "h-full",
@@ -86,11 +86,11 @@ export const Toggle: React.FC<ToggleProps> = ({
     "w-full"
   )
 
-  const groupCls = cn("flex", "items-center")
+  const groupCls = clsx("flex", "items-center")
 
-  const labelCls = cn("font-medium", "text-gray-900", "text-sm")
+  const labelCls = clsx("font-medium", "text-gray-900", "text-sm")
 
-  const descriptionCls = cn("text-gray-500", "text-sm", { "ml-1": label })
+  const descriptionCls = clsx("text-gray-500", "text-sm", { "ml-1": label })
 
   const ParseSwitch = () => {
     return (
@@ -116,7 +116,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     return (
       <Switch.Group as="div" className={groupCls}>
         {!flip && <ParseSwitch />}
-        <Switch.Label as="span" className={cn([flip ? "mr-3" : "ml-3"])}>
+        <Switch.Label as="span" className={clsx([flip ? "mr-3" : "ml-3"])}>
           {label && <span className={labelCls}>{label}</span>}
           {description && <span className={descriptionCls}>{description}</span>}
         </Switch.Label>

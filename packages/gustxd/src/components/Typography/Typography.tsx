@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type TypographyTypes =
@@ -27,22 +27,22 @@ export const Typography: React.FC<TypographyProps> = ({
   const parseClasses = () => {
     switch (type) {
       case "h1":
-        return cn(className, "font-light", "text-8xl")
+        return clsx(className, "font-light", "text-8xl")
       case "h2":
-        return cn(className, "font-light", "text-6xl")
+        return clsx(className, "font-light", "text-6xl")
       case "h3":
-        return cn(className, "font-normal", "text-5xl")
+        return clsx(className, "font-normal", "text-5xl")
       case "h4":
-        return cn(className, "font-normal", "text-4xl")
+        return clsx(className, "font-normal", "text-4xl")
       case "h5":
-        return cn(className, "font-medum", "text-2xl")
+        return clsx(className, "font-medum", "text-2xl")
       case "h6":
-        return cn(className, "font-medium", "text-xl")
+        return clsx(className, "font-medium", "text-xl")
       case "div":
       case "p":
       case "span":
       default:
-        return cn(className, "font-normal", "text-base")
+        return clsx(className, "font-normal", "text-base")
     }
   }
 

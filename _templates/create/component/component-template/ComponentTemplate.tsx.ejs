@@ -2,7 +2,7 @@
 to: packages/gustxd/src/components/<%= component.charAt(0).toUpperCase() + component.slice(1) %>/<%= component.charAt(0).toUpperCase() + component.slice(1) %>.tsx
 ---
 import React from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 export type <%= component.charAt(0).toUpperCase() + component.slice(1) %>Props = {
   children?: React.ReactNode;
@@ -14,7 +14,7 @@ export const <%= component.charAt(0).toUpperCase() + component.slice(1) %>: Reac
   className,
   ...rest
 }) => {
-  const outerCls = cn(className);
+  const outerCls = clsx(className);
 
   // console.log([].sort());
   

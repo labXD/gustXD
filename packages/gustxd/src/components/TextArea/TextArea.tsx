@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type TextAreaProps = {
@@ -15,10 +15,10 @@ export const TextArea: React.FC<TextAreaProps> = ({
   id,
   ...rest
 }) => {
-  const outerCls = cn(className)
-  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm")
-  const labelCls = cn("text-left")
-  const textAreaCls = cn(
+  const outerCls = clsx(className)
+  const labelWrapCls = clsx("block", "font-medium", "text-gray-700", "text-sm")
+  const labelCls = clsx("text-left")
+  const textAreaCls = clsx(
     "block",
     "border-gray-300",
     "focus:border-indigo-500",
@@ -33,7 +33,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
       <div className={outerCls}>
         <label className={labelWrapCls}>
           <div className={labelCls}>{label}</div>
-          <div className={cn({ "mt-1": label })}>
+          <div className={clsx({ "mt-1": label })}>
             <textarea
               rows={4}
               name={id}

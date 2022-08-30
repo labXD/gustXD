@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type SelectProps = {
@@ -19,11 +19,11 @@ export const Select: React.FC<SelectProps> = ({
   options,
   ...rest
 }) => {
-  const outerCls = cn(className)
+  const outerCls = clsx(className)
 
-  const labelWrapCls = cn("block", "font-medium", "text-gray-700", "text-sm")
-  const labelCls = cn("text-left")
-  const selectCls = cn(
+  const labelWrapCls = clsx("block", "font-medium", "text-gray-700", "text-sm")
+  const labelCls = clsx("text-left")
+  const selectCls = clsx(
     "block",
     "border-gray-300",
     "focus:border-indigo-500",

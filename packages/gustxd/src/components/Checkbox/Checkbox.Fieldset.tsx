@@ -1,4 +1,4 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React from "react"
 
 export type CheckboxFieldsetProps = {
@@ -13,7 +13,7 @@ export const CheckboxFieldset: React.FC<CheckboxFieldsetProps> = ({
   screenReader,
   ...rest
 }) => {
-  const outerClassNames = cn(className, "space-y-5")
+  const outerClassNames = clsx(className, "space-y-5")
 
   return (
     <fieldset className={outerClassNames} {...rest}>
