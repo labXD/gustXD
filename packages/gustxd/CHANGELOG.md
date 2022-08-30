@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.4.1
+
+### Patch Changes
+
+- remove classnames
+
 ## 0.4.0
 
 ### Minor Changes

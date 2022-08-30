@@ -116,7 +116,7 @@ export const Toggle: React.FC<ToggleProps> = ({
     return (
       <Switch.Group as="div" className={groupCls}>
         {!flip && <ParseSwitch />}
-        <Switch.Label as="span" className={cn([flip ? "mr-3" : "ml-3"])}>
+        <Switch.Label as="span" className={clsx([flip ? "mr-3" : "ml-3"])}>
           {label && <span className={labelCls}>{label}</span>}
           {description && <span className={descriptionCls}>{description}</span>}
         </Switch.Label>

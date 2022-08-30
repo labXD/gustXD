@@ -33,7 +33,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
       <div className={outerCls}>
         <label className={labelWrapCls}>
           <div className={labelCls}>{label}</div>
-          <div className={cn({ "mt-1": label })}>
+          <div className={clsx({ "mt-1": label })}>
             <textarea
               rows={4}
               name={id}
