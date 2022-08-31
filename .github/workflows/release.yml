@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - dev
@@ -31,5 +32,8 @@ jobs:
 
       - name: Create Release Pull Request
         uses: changesets/action@v1.3.0
+        with:
+          commit: "release(auto): changeset bot publishing updates commit"
+          title: "release(auto): changeset bot publishing updates title"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
