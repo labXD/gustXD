@@ -1,6 +1,8 @@
 const config = {
   extends: ['@commitlint/config-conventional'],
-  rules: {},
+  rules: {
+    "type-enum": [2, "always", ["release"]],
+  },
 };
 
 module.exports = config;
