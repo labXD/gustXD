@@ -16,6 +16,7 @@
     "create:component": "npx hygen create component",
     "lint": "pnpm exec eslint --ext .ts,.tsx .",
     "lint:fix": "pnpm run lint --fix",
+    "lint:ci": "pnpm run lint",
     "hook:add": "husky add",
     "hook:commit-msg": "commitlint --edit $1",
     "hook:pre-commit": "lint-staged",
