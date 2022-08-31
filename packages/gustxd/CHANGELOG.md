@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.4.2
+
+### Patch Changes
+
+- 7720644: update deps
+
 ## 0.4.1
 
 ### Patch Changes
