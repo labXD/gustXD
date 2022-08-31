@@ -37,7 +37,8 @@
     "publish:sb": "pnpm dlx chromatic --project-token=${CHROMATIC_TOKEN}"
   },
   "peerDependencies": {
-    "react": ">=17"
+    "react": ">=17",
+    "@headlessui/react": "~1.6.6"
   },
   "devDependencies": {
     "@babel/core": "7.18.13",
@@ -73,7 +74,8 @@
     "webpack": "5.74.0",
     "storybook-dark-mode": "^1.1.0",
     "@storybook/addon-docs": "6.5.10",
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "@headlessui/react": "^1.6.6"
   },
   "size-limit": [
     {
@@ -86,7 +88,6 @@
     }
   ],
   "dependencies": {
-    "@headlessui/react": "^1.6.6",
     "@tailwindcss/forms": "^0.5.2"
   }
 }
