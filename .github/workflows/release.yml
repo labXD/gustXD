@@ -33,7 +33,7 @@ jobs:
       - name: Create Release Pull Request
         uses: changesets/action@v1.3.0
         with:
-          commit: "release(auto): changeset bot publishing updates commit"
-          title: "release(auto): changeset bot publishing updates title"
+          commit: "release(auto): new package release"
+          title: "release(auto): new package release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
