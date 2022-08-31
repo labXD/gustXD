@@ -35,5 +35,8 @@ jobs:
         with:
           commit: "release(auto): new package release"
           title: "release(auto): new package release"
+          version: pnpm changeset version
+          publish: pnpm changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.JIMMYNXD_NPM_TOKEN }}
