@@ -1,5 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* @layer base {
+  button {
+  
+  }
+} */
+@layer components {
+  .xd-button {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply ring-1 ring-inset rounded-sm font-semibold;
+    @apply text-white bg-[#782FED] ring-[#641DD6];
+    border-style: inset;
+  }
+  .xd-button-secondary {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply ring-1 ring-inset rounded-sm font-semibold;
+    @apply text-[#1D2433] bg-white ring-[#1D2433]/80;
+    border-style: inset;
+  }
+  .xd-button-secondary-light {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply ring-1 ring-inset rounded-sm font-semibold;
+    @apply text-[#1D2433]/80 bg-white ring-neutral-300;
+    border-style: inset;
+  }
+
+  .xd-button-ghost {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply rounded-sm font-semibold;
+    @apply text-[#1D2433]/[.65] bg-white;
+    border-style: inset;
+  }
+
+  .xd-button-sm {
+    @apply space-x-1 text-xs px-3 py-[10px];
+  }
+  .xd-button-danger {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply ring-1 ring-inset rounded-sm font-semibold;
+    @apply text-white bg-[#F75480] ring-[#DE3562];
+    border-style: inset;
+  }
+  .xd-divider {
+    @apply flex items-center text-xd-text-primary/80 font-semibold px-4;
+    @apply after:flex after:flex-grow after:content-[''] after:h-[1px] after:bg-neutral-300;
+    @apply before:flex before:flex-grow before:content-[''] before:h-[1px] before:bg-neutral-300;
+  }
+  .xd-card-left-border {
+    @apply bg-white rounded px-4 py-3 shadow-md relative;
+    @apply after:content-[''] after:absolute after:w-1 after:h-full after:bg-[#F75480] after:top-0 after:left-0;
+    @apply after:rounded-tl after:rounded-bl;
+  }
+}

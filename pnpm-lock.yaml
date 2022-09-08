@@ -94,7 +94,8 @@ importers:
   packages/gustxd:
     specifiers:
       '@babel/core': 7.18.13
-      '@headlessui/react': ^1.6.6
+      '@headlessui/react': ^1.7.0
+      '@labxd/gustxd': ^0.4.2
       '@size-limit/preset-small-lib': 8.0.1
       '@storybook/addon-docs': 6.5.10
       '@storybook/addon-essentials': 6.5.10
@@ -130,10 +131,11 @@ importers:
       typescript: 4.8.2
       webpack: 5.74.0
     dependencies:
+      '@labxd/gustxd': 'link:'
       '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
     devDependencies:
       '@babel/core': 7.18.13
-      '@headlessui/react': 1.6.6_biqbaboplfbrettd7655fr4n2y
+      '@headlessui/react': 1.7.0_biqbaboplfbrettd7655fr4n2y
       '@size-limit/preset-small-lib': 8.0.1_size-limit@8.0.1
       '@storybook/addon-docs': 6.5.10_zjar7he2mda2bdlp53du42czau
       '@storybook/addon-essentials': 6.5.10_u2xo4od2ezpsekchjopthpj67y
@@ -4035,6 +4037,18 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@headlessui/react/1.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-/nDsijOXRwXVLpUBEiYuWguIBSIN3ZbKyah+KPUiD8bdIKtX1U/k+qLYUEr7NCQnSF2e4w1dr8me42ECuG3cvw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: true
 
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
@@ -8584,7 +8598,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -17494,17 +17508,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.5:
