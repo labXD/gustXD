@@ -6,8 +6,18 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "author": "labXD Core",
+  "contributors": [
+    "Jimmy Nguyen <jimmy@labxd.com> (https://github.com/jimmynxd)",
+    "Walee Ahmed <walee@labxd.com> (https://github.com/wallexd)"
+  ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labXD/gustXD/",
+    "directory": "packages/gustxd"
   },
   "files": [
     "dist",
@@ -90,7 +100,6 @@
     }
   ],
   "dependencies": {
-    "@labxd/gustxd": "^0.6.0",
     "@tailwindcss/forms": "^0.5.2"
   }
 }
