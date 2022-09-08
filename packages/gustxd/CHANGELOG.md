@@ -1,5 +1,16 @@
 # @labxd/gustxd
 
+## 0.5.0
+
+### Minor Changes
+
+- dc38e8a: form styles
+
+### Patch Changes
+
+- Updated dependencies [dc38e8a]
+  - @labxd/gustxd@0.5.0
+
 ## 0.4.2
 
 ### Patch Changes
