@@ -4,7 +4,7 @@ import React from "react"
 import { TextArea, TextAreaProps } from "."
 
 const meta: Meta = {
-  title: "Components/TextArea",
+  title: "React/TextArea",
   component: TextArea,
   parameters: {
     controls: { expanded: true },

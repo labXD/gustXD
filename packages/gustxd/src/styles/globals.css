@@ -6,12 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  button {
-  
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Red Hat Display", sans-serif;
   }
-} */
+}
+
 @layer components {
+  /* buttons */
   .xd-button {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
     @apply ring-1 ring-inset rounded-sm font-semibold;
@@ -37,24 +44,46 @@
     @apply text-[#1D2433]/[.65] bg-white;
     border-style: inset;
   }
-
-  .xd-button-sm {
-    @apply space-x-1 text-xs px-3 py-[10px];
-  }
   .xd-button-danger {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
     @apply ring-1 ring-inset rounded-sm font-semibold;
     @apply text-white bg-[#F75480] ring-[#DE3562];
     border-style: inset;
   }
+  .xd-button-sm {
+    @apply space-x-1 text-xs px-3 py-[10px];
+  }
+  /* divider */
   .xd-divider {
     @apply flex items-center text-xd-text-primary/80 font-semibold px-4;
     @apply after:flex after:flex-grow after:content-[''] after:h-[1px] after:bg-neutral-300;
     @apply before:flex before:flex-grow before:content-[''] before:h-[1px] before:bg-neutral-300;
   }
-  .xd-card-left-border {
+  /* cards */
+  .xd-card {
     @apply bg-white rounded px-4 py-3 shadow-md relative;
+  }
+  .xd-card-border {
+    @apply after:content-[''] after:rounded after:absolute after:inset-0 after:ring-4 after:ring-inset after:ring-[#F75480];
+  }
+  .xd-card-border-l {
     @apply after:content-[''] after:absolute after:w-1 after:h-full after:bg-[#F75480] after:top-0 after:left-0;
-    @apply after:rounded-tl after:rounded-bl;
+    @apply after:rounded-l;
+  }
+  .xd-card-border-r {
+    @apply after:content-[''] after:absolute after:w-1 after:h-full after:bg-[#F75480] after:top-0 after:right-0;
+    @apply after:rounded-r;
+  }
+  .xd-card-border-t {
+    @apply after:content-[''] after:absolute after:h-1 after:w-full after:bg-[#F75480] after:top-0 after:left-0 after:right-0;
+    @apply after:rounded-t;
+  }
+  .xd-card-border-b {
+    @apply after:content-[''] after:absolute after:h-1 after:w-full after:bg-[#F75480] after:bottom-0 after:right-0 after:left-0;
+    @apply after:rounded-b;
+  }
+  .xd-card-focus {
+    @apply after:transition-all;
+    @apply after:opacity-10 focus-within:after:opacity-100;
   }
 }

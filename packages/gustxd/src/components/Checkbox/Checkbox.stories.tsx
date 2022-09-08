@@ -4,7 +4,7 @@ import React from "react"
 import { Checkbox, CheckboxFieldset, CheckboxProps } from "."
 
 const meta: Meta = {
-  title: "Components/Checkbox",
+  title: "React/Checkbox",
   component: Checkbox,
   subcomponents: { CheckboxFieldset },
   argTypes: {
