@@ -12,6 +12,16 @@ const config = {
       display: ["Red Hat Display", "sans-serif"],
     },
     extend: {
+      colors: {
+        xd: {
+          bg: "#F6F0FF",
+          "text-primary": "#1D2433",
+          "purple-primary": "#782FED",
+          "purple-secondary": "#641DD6",
+          "red-primary": "#F75480",
+          "red-secondary": "#DE3562",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
