@@ -1,5 +1,16 @@
 # @labxd/gustxd
 
+## 0.6.0
+
+### Minor Changes
+
+- 4e3320d: Updated storybook, added card classes, added colors to preset
+
+### Patch Changes
+
+- Updated dependencies [4e3320d]
+  - @labxd/gustxd@0.6.0
+
 ## 0.5.0
 
 ### Minor Changes
