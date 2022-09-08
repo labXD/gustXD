@@ -33,10 +33,12 @@ jobs:
       - name: Create Release Pull Request
         uses: changesets/action@v1.3.0
         with:
-          commit: "release(auto): new package release"
-          title: "release(auto): new package release"
+          # commit: "release(auto): new package release"
+          # title: "release(auto): new package release"
+          commit: "chore(auto): new package version only"
+          title: "chore(auto): new package version only"
           version: pnpm changeset version
-          publish: pnpm changeset publish
+          # publish: pnpm changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.JIMMYNXD_NPM_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.JIMMYNXD_NPM_TOKEN }}

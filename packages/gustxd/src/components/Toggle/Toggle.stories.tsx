@@ -4,7 +4,7 @@ import React from "react"
 import { Toggle, ToggleProps } from "."
 
 const meta: Meta = {
-  title: "components/Toggle",
+  title: "React/Toggle",
   component: Toggle,
   parameters: {
     controls: { expanded: true },

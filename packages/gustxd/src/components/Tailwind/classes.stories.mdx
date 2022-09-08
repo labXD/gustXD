@@ -1,0 +1,64 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs"
+
+<Meta title="Classes/Components" />
+
+## .xd-button
+
+<Canvas>
+  <Story name="Button">
+    <main className="space-y-2">
+      <button className="xd-button">xd-button</button>
+      <button className="xd-button xd-button-sm">xd-button small</button>
+      <button className="xd-button-secondary">button</button>
+      <button className="xd-button-secondary xd-button-sm">button</button>
+      <button className="xd-button-secondary-light">
+        xd-button-secondary-light
+      </button>
+      <button className="xd-button-secondary-light xd-button-sm">
+        xd-button-secondary-light small
+      </button>
+      <button className="xd-button-ghost">xd-button-ghost</button>
+      <button className="xd-button-ghost xd-button-sm">
+        xd-button-ghost small
+      </button>
+      <button className="xd-button-danger">xd-button-danger</button>
+      <button className="xd-button-danger xd-button-sm">
+        xd-button-danger small
+      </button>
+    </main>
+  </Story>
+</Canvas>
+
+## .xd-divider
+
+<Canvas>
+  <Story name="Divider">
+    <main>
+      <div className="xd-divider">
+        <span className="px-4">Or</span>
+      </div>
+    </main>
+  </Story>
+</Canvas>
+
+## .xd-card
+
+The card component has a few variants. You can add a border to the left, right, top, bottom or all sides.
+
+The `xd-card-focus` class will hide the border until something is focused inside (like a text input).
+
+<Canvas>
+  <Story name="Card">
+    <main className="space-y-4">
+      <div className="xd-card xd-card-border-l xd-card-focus">
+        <input placeholde="hello" />
+      </div>
+      <div className="xd-card">card</div>
+      <div className="xd-card xd-card-border-l">card border left</div>
+      <div className="xd-card xd-card-border-r">card border right</div>
+      <div className="xd-card xd-card-border-t">card border top</div>
+      <div className="xd-card xd-card-border-b">card border bottom</div>
+      <div className="xd-card xd-card-border">card full border</div>
+    </main>
+  </Story>
+</Canvas>

@@ -1,0 +1,77 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs"
+
+<Meta title="Classes/Typography" />
+
+## Primary Font (Red Hat Text)
+
+Red Hat Text is the default font used. You do not need to add the class, but if you want to be explicit:
+
+<Canvas>
+  <Story name="Primary (Red Hat Text)">
+    <main className="space-y-4">
+      <section className="font-normal">
+        <h1>font-sans font-regular</h1>
+        <p className="font-sans">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <section className="font-medium">
+        <h1>font-sans font-medium</h1>
+        <p className="font-sans">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <section className="font-semibold">
+        <h1>font-sans font-semibold</h1>
+        <p className="font-sans">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <section className="font-bold">
+        <h1>font-sans font-bold</h1>
+        <p className="font-sans">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+    </main>
+  </Story>
+</Canvas>
+
+## Heading (Red Hat Display)
+
+Red Hat Display is the default font used for all headers. You do not need to add the class, but if you want to be explicit:
+
+<Canvas>
+  <Story name="Heading (Red Hat Display)">
+    <main className="space-y-1">
+      <h1 className="font-display font-normal">font-display font-regular</h1>
+      <h1 className="font-display font-medium">font-display font-medium</h1>
+      <h1 className="font-display font-semibold">font-display font-semifont</h1>
+      <h1 className="font-display font-bold">font-display font-bold</h1>
+    </main>
+  </Story>
+</Canvas>

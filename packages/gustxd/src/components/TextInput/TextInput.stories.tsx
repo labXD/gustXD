@@ -4,7 +4,7 @@ import React from "react"
 import { TextInput, TextInputProps } from "."
 
 const meta: Meta = {
-  title: "Components/Text Input",
+  title: "React/Text Input",
   component: TextInput,
   argTypes: {
     children: {

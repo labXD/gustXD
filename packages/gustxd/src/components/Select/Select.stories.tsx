@@ -4,7 +4,7 @@ import React from "react"
 import { Select, SelectProps } from "."
 
 const meta: Meta = {
-  title: "Components/Select",
+  title: "React/Select",
   component: Select,
   parameters: {
     controls: { expanded: true },

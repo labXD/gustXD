@@ -4,7 +4,7 @@ import React from "react"
 import { Badge, BadgeProps } from "."
 
 const meta: Meta = {
-  title: "Components/Badge",
+  title: "React/Badge",
   component: Badge,
   argTypes: {
     children: {

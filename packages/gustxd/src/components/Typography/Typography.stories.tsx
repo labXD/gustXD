@@ -4,7 +4,7 @@ import React from "react"
 import { Typography, TypographyProps } from "."
 
 const meta: Meta = {
-  title: "components/Typography",
+  title: "React/Typography",
   component: Typography,
   argTypes: {
     children: {

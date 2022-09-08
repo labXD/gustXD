@@ -4,7 +4,7 @@ import React from "react"
 import { RadioButton, RadioButtonGroup, RadioButtonProps } from "."
 
 const meta: Meta = {
-  title: "Components/Radio Button",
+  title: "React/Radio Button",
   component: RadioButton,
   subcomponents: { RadioButtonGroup },
   argTypes: {},

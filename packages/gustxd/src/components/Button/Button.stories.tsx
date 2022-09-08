@@ -4,7 +4,7 @@ import React from "react"
 import { Button, ButtonProps } from "."
 
 const meta: Meta = {
-  title: "components/Button",
+  title: "React/Button",
   component: Button,
   argTypes: {
     children: {
@@ -28,3 +28,4 @@ Default.args = {
   size: "md",
   variant: "primary",
 }
+Default.storyName = "React"

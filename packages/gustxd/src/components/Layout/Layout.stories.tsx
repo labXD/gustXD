@@ -4,7 +4,7 @@ import React from "react"
 import { BaseLayout, BaseLayoutProps } from "."
 
 const meta: Meta = {
-  title: "components/Layout",
+  title: "React/Layout",
   component: BaseLayout,
   argTypes: {
     children: {
