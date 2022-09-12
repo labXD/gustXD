@@ -1,5 +1,21 @@
 # @labxd/gustxd
 
+## 0.6.1
+
+### Patch Changes
+
+- fb94e32: presets.js
+
+  - xd-primary
+  - xd-danger
+  - xd-text-primary
+
+  globals.css
+
+  - rounded google icons
+  - base input styles
+  - button link and updates
+
 ## 0.6.0
 
 ### Minor Changes
