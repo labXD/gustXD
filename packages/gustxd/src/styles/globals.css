@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,22 +15,42 @@
   h6 {
     font-family: "Red Hat Display", sans-serif;
   }
+  input {
+    border: none;
+    /* xd-text-primary-black */
+    color: rgb(29 36 51 / 1);
+  }
+  input::placeholder {
+    /* xd-text-primary-black/[.65] */
+    color: rgb(29 36 51 / 0.65);
+  }
 }
 
 @layer components {
+  /* TODO:
+    * need to redo this 
+    */
+  input {
+    @apply focus:ring-xd-primary-700 !important;
+  }
   /* buttons */
   .xd-button {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-white bg-[#782FED] ring-[#641DD6];
+    @apply rounded-sm font-semibold transition-all;
+    @apply text-white bg-xd-primary-700;
+    @apply hover:bg-xd-primary-800;
+    @apply focus:bg-xd-primary-900;
+    @apply active:bg-xd-primary-900;
     border-style: inset;
   }
+
   .xd-button-secondary {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
     @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-[#1D2433] bg-white ring-[#1D2433]/80;
+    @apply text-xd-text-primary-black bg-white ring-[#1D2433]/80;
     border-style: inset;
   }
+
   .xd-button-secondary-light {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
     @apply ring-1 ring-inset rounded-sm font-semibold;
@@ -44,15 +64,28 @@
     @apply text-[#1D2433]/[.65] bg-white;
     border-style: inset;
   }
+
   .xd-button-danger {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-white bg-[#F75480] ring-[#DE3562];
+    @apply rounded-sm font-semibold transition-all;
+    @apply text-white bg-xd-danger-700;
+    @apply hover:bg-xd-danger-800;
+    @apply focus:bg-xd-danger-900;
+    @apply active:bg-xd-danger-900;
     border-style: inset;
   }
+
   .xd-button-sm {
     @apply space-x-1 text-xs px-3 py-[10px];
   }
+
+  .xd-button-link {
+    @apply cursor-pointer relative;
+    @apply text-[#782FED];
+    @apply after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0;
+    @apply after:transition-[width] after:h-[1px] after:bg-[#782FED] after:w-0 hover:after:w-full;
+  }
+
   /* divider */
   .xd-divider {
     @apply flex items-center text-xd-text-primary/80 font-semibold px-4;
