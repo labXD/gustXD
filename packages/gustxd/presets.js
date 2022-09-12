@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors")
+
 /** @type {import('tailwindcss').Config} */
 const config = {
   plugins: [require("@tailwindcss/forms")],
@@ -36,6 +38,21 @@ const config = {
           700: "#AE2341",
           800: "#82192A",
           900: "#511016",
+        },
+        "xd-primary": {
+          100: "#F6F0FF",
+          700: "#782FED",
+          800: "#641DD6",
+          900: "#551EAE",
+        },
+        "xd-danger": {
+          700: "#E02D3C",
+          800: "#BA2532",
+          900: "#981B25",
+        },
+        "xd-text-primary": {
+          white: colors.white,
+          black: "#1D2433",
         },
         xd: {
           bg: "#F6F0FF",
