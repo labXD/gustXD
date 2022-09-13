@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.6.2
+
+### Patch Changes
+
+- 9dd78e7: input error states
+
 ## 0.6.1
 
 ### Patch Changes
