@@ -23,7 +23,7 @@
     "dist",
     "presets.js",
     "README.md",
-    "src/styles/**"
+    "src/styles/globals.css"
   ],
   "exports": {
     ".": "./dist/index.js",

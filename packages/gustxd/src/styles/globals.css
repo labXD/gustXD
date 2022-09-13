@@ -15,24 +15,43 @@
   h6 {
     font-family: "Red Hat Display", sans-serif;
   }
+
   input {
-    border: none;
+    @apply focus:ring-xd-primary-700 !important;
     /* xd-text-primary-black */
     color: rgb(29 36 51 / 1);
   }
+
+  input[type="text"] {
+    border: none;
+  }
+
+  input[type="radio"] {
+    @apply border-xd-text-primary-black/[.65];
+  }
+
+  input[type="radio"]:checked,
+  input[type="radio"]:checked:focus,
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:checked:focus {
+    @apply bg-xd-primary-700;
+  }
+
+  input[type="checkbox"] {
+    @apply rounded-sm;
+  }
+
   input::placeholder {
     /* xd-text-primary-black/[.65] */
     color: rgb(29 36 51 / 0.65);
   }
+
+  input[aria-invalid="true"] {
+    @apply ring-xd-danger-800 !important;
+  }
 }
 
 @layer components {
-  /* TODO:
-    * need to redo this 
-    */
-  input {
-    @apply focus:ring-xd-primary-700 !important;
-  }
   /* buttons */
   .xd-button {
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
@@ -48,6 +67,13 @@
     @apply px-4 py-3 space-x-2 flex items-center justify-center;
     @apply ring-1 ring-inset rounded-sm font-semibold;
     @apply text-xd-text-primary-black bg-white ring-[#1D2433]/80;
+    border-style: inset;
+  }
+
+  .xd-button-secondary-light {
+    @apply px-4 py-3 space-x-2 flex items-center justify-center;
+    @apply ring-1 ring-inset rounded-sm font-semibold;
+    @apply text-xd-text-primary-black bg-white ring-neutral-300;
     border-style: inset;
   }
 
@@ -81,6 +107,13 @@
 
   .xd-button-link {
     @apply cursor-pointer relative;
+    @apply text-[#782FED];
+    @apply after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0;
+    @apply after:transition-[width] after:h-[1px] after:bg-[#782FED] after:w-0 hover:after:w-full;
+  }
+
+  .xd-button-link-inline {
+    @apply cursor-pointer relative flex space-x-2;
     @apply text-[#782FED];
     @apply after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0;
     @apply after:transition-[width] after:h-[1px] after:bg-[#782FED] after:w-0 hover:after:w-full;
