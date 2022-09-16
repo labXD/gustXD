@@ -1,8 +1,8 @@
 const colors = require("tailwindcss/colors")
-
+const xdColors = require("./src/colors")
 /** @type {import('tailwindcss').Config} */
 const config = {
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("./src/plugin"), require("./src/plugin/button")],
   safelist: [
     {
       pattern: /bg-*-*/,
@@ -15,18 +15,8 @@ const config = {
     },
     extend: {
       colors: {
-        "xd-purple": {
-          50: "#FAF8FB",
-          100: "#F2EBF9",
-          200: "#E0C0FD",
-          300: "#C793FA",
-          400: "#9B64FF",
-          500: "#873AFF",
-          600: "#7832EB",
-          700: "#6023C6",
-          800: "#45119C",
-          900: "#1B008B",
-        },
+        ...xdColors,
+        // #region xd colors but may not be used
         "xd-red": {
           50: "#FDFCFB",
           100: "#FCEFEF",
@@ -39,16 +29,17 @@ const config = {
           800: "#82192A",
           900: "#511016",
         },
-        "xd-primary": {
-          100: "#F6F0FF",
-          700: "#782FED",
-          800: "#641DD6",
-          900: "#551EAE",
-        },
-        "xd-danger": {
-          700: "#E02D3C",
-          800: "#BA2532",
-          900: "#981B25",
+        "xd-purple": {
+          50: "#FAF8FB",
+          100: "#F2EBF9",
+          200: "#E0C0FD",
+          300: "#C793FA",
+          400: "#9B64FF",
+          500: "#873AFF",
+          600: "#7832EB",
+          700: "#6023C6",
+          800: "#45119C",
+          900: "#1B008B",
         },
         "xd-text-primary": {
           white: colors.white,
@@ -62,6 +53,7 @@ const config = {
           "red-primary": "#F75480",
           "red-secondary": "#DE3562",
         },
+        // #endregion
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -6,103 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Red Hat Display", sans-serif;
-  }
-
-  input {
-    @apply focus:ring-xd-primary-700 !important;
-    /* xd-text-primary-black */
-    color: rgb(29 36 51 / 1);
-  }
-
-  input[type="text"] {
-    border: none;
-  }
-
-  input[type="radio"] {
-    @apply border-xd-text-primary-black/[.65];
-  }
-
-  input[type="radio"]:checked,
-  input[type="radio"]:checked:focus,
-  input[type="checkbox"]:checked,
-  input[type="checkbox"]:checked:focus {
-    @apply bg-xd-primary-700;
-  }
-
-  input[type="checkbox"] {
-    @apply rounded-sm;
-  }
-
-  input::placeholder {
-    /* xd-text-primary-black/[.65] */
-    color: rgb(29 36 51 / 0.65);
-  }
-
-  input[aria-invalid="true"] {
-    @apply ring-xd-danger-800 !important;
-  }
-}
-
 @layer components {
-  /* buttons */
-  .xd-button {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply rounded-sm font-semibold transition-all;
-    @apply text-white bg-xd-primary-700;
-    @apply hover:bg-xd-primary-800;
-    @apply focus:bg-xd-primary-900;
-    @apply active:bg-xd-primary-900;
-    border-style: inset;
-  }
-
-  .xd-button-secondary {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-xd-text-primary-black bg-white ring-[#1D2433]/80;
-    border-style: inset;
+  .xd-button-secondary-light {
+    @apply ring-1 ring-inset;
+    @apply text-xd-primary-black bg-white ring-neutral-300;
   }
 
   .xd-button-secondary-light {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-xd-text-primary-black bg-white ring-neutral-300;
-    border-style: inset;
-  }
-
-  .xd-button-secondary-light {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply ring-1 ring-inset rounded-sm font-semibold;
-    @apply text-[#1D2433]/80 bg-white ring-neutral-300;
-    border-style: inset;
+    @apply ring-1 ring-inset;
+    @apply text-xd-primary-black/80 bg-white ring-neutral-300;
   }
 
   .xd-button-ghost {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply rounded-sm font-semibold;
-    @apply text-[#1D2433]/[.65] bg-white;
-    border-style: inset;
-  }
-
-  .xd-button-danger {
-    @apply px-4 py-3 space-x-2 flex items-center justify-center;
-    @apply rounded-sm font-semibold transition-all;
-    @apply text-white bg-xd-danger-700;
-    @apply hover:bg-xd-danger-800;
-    @apply focus:bg-xd-danger-900;
-    @apply active:bg-xd-danger-900;
-    border-style: inset;
-  }
-
-  .xd-button-sm {
-    @apply space-x-1 text-xs px-3 py-[10px];
+    @apply text-xd-primary-black/[.65] bg-white;
   }
 
   .xd-button-link {
@@ -119,13 +35,12 @@
     @apply after:transition-[width] after:h-[1px] after:bg-[#782FED] after:w-0 hover:after:w-full;
   }
 
-  /* divider */
   .xd-divider {
     @apply flex items-center text-xd-text-primary/80 font-semibold px-4;
     @apply after:flex after:flex-grow after:content-[''] after:h-[1px] after:bg-neutral-300;
     @apply before:flex before:flex-grow before:content-[''] before:h-[1px] before:bg-neutral-300;
   }
-  /* cards */
+
   .xd-card {
     @apply bg-white rounded px-4 py-3 shadow-md relative;
   }

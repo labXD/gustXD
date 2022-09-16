@@ -5,8 +5,8 @@
       "path": "apps/website"
     },
     {
-      "name": "📦 @labxd/gustxd",
-      "path": "packages/gustxd"
+      "name": "📦 packages",
+      "path": "packages"
     },
     {
       "name": "🌱 root",

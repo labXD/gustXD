@@ -29,7 +29,8 @@
     ".": "./dist/index.js",
     "./full-styles.css": "./dist/gustxd.cjs.production.min.css",
     "./styles.css": "./src/styles/globals.css",
-    "./tailwind": "./presets.js"
+    "./tailwind": "./presets.js",
+    "./tailwind-preset": "./presets.js"
   },
   "engines": {
     "node": ">=14"
@@ -56,16 +57,15 @@
     "@babel/core": "7.18.13",
     "@headlessui/react": "^1.7.0",
     "@size-limit/preset-small-lib": "8.0.1",
-    "@storybook/addon-docs": "6.5.10",
-    "@storybook/addon-essentials": "6.5.10",
-    "@storybook/addon-info": "5.3.21",
-    "@storybook/addon-links": "6.5.10",
+    "@storybook/addon-docs": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
     "@storybook/addon-postcss": "2.0.0",
-    "@storybook/addons": "6.5.10",
-    "@storybook/builder-webpack5": "6.5.10",
-    "@storybook/manager-webpack5": "6.5.10",
-    "@storybook/react": "6.5.10",
-    "@storybook/theming": "6.5.10",
+    "@storybook/addons": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/theming": "^6.5.12",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.8",
@@ -82,7 +82,7 @@
     "rollup-plugin-postcss": "4.0.2",
     "size-limit": "8.0.1",
     "storybook-css-modules-preset": "1.1.1",
-    "storybook-dark-mode": "^1.1.0",
+    "storybook-dark-mode": "^1.1.2",
     "tailwindcss": "3.1.8",
     "tsdx": "0.14.1",
     "tslib": "2.4.0",
@@ -100,6 +100,6 @@
     }
   ],
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.2"
+    "mini-svg-data-uri": "^1.4.4"
   }
 }
