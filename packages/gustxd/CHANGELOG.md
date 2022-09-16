@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.7.0
+
+### Minor Changes
+
+- e32231e: buttons added to config, moved from css to config
+
 ## 0.6.2
 
 ### Patch Changes
