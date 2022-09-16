@@ -6,25 +6,21 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs"
 
 <Canvas>
   <Story name="Button">
-    <main className="space-y-2">
-      <button className="xd-button">xd-button</button>
-      <button className="xd-button xd-button-sm">xd-button small</button>
-      <button className="xd-button-secondary">button</button>
-      <button className="xd-button-secondary xd-button-sm">button</button>
-      <button className="xd-button-secondary-light">
-        xd-button-secondary-light
-      </button>
-      <button className="xd-button-secondary-light xd-button-sm">
-        xd-button-secondary-light small
-      </button>
-      <button className="xd-button-ghost">xd-button-ghost</button>
-      <button className="xd-button-ghost xd-button-sm">
-        xd-button-ghost small
-      </button>
-      <button className="xd-button-danger">xd-button-danger</button>
-      <button className="xd-button-danger xd-button-sm">
-        xd-button-danger small
-      </button>
+    <main class="grid grid-cols-2 gap-4">
+      <div class="space-y-2">
+        <button>button no class</button>
+        <button class="button button-primary">button-primary</button>
+        <button class="button-outline">button-outline</button>
+        <button class="button-danger">button-danger</button>
+      </div>
+      <div class="space-y-2">
+        <button class="button-sm">button small</button>
+        <button class="button button-primary button-sm">
+          button-primary small
+        </button>
+        <button class="button-outline button-sm">button-outline small</button>
+        <button class="button-danger button-sm">button-danger small</button>
+      </div>
     </main>
   </Story>
 </Canvas>
@@ -34,8 +30,8 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs"
 <Canvas>
   <Story name="Divider">
     <main>
-      <div className="xd-divider">
-        <span className="px-4">Or</span>
+      <div class="xd-divider">
+        <span class="px-4">Or</span>
       </div>
     </main>
   </Story>
@@ -43,22 +39,24 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs"
 
 ## .xd-card
 
-The card component has a few variants. You can add a border to the left, right, top, bottom or all sides.
+The card component has a few variants. You can add a border to the left, right,
+top, bottom or all sides.
 
-The `xd-card-focus` class will hide the border until something is focused inside (like a text input).
+The `xd-card-focus` class will hide the border until something is focused inside
+(like a text input).
 
 <Canvas>
   <Story name="Card">
-    <main className="space-y-4">
-      <div className="xd-card xd-card-border-l xd-card-focus">
+    <main class="space-y-4">
+      <div class="xd-card xd-card-border-l xd-card-focus">
         <input placeholde="hello" />
       </div>
-      <div className="xd-card">card</div>
-      <div className="xd-card xd-card-border-l">card border left</div>
-      <div className="xd-card xd-card-border-r">card border right</div>
-      <div className="xd-card xd-card-border-t">card border top</div>
-      <div className="xd-card xd-card-border-b">card border bottom</div>
-      <div className="xd-card xd-card-border">card full border</div>
+      <div class="xd-card">card</div>
+      <div class="xd-card xd-card-border-l">card border left</div>
+      <div class="xd-card xd-card-border-r">card border right</div>
+      <div class="xd-card xd-card-border-t">card border top</div>
+      <div class="xd-card xd-card-border-b">card border bottom</div>
+      <div class="xd-card xd-card-border">card full border</div>
     </main>
   </Story>
 </Canvas>

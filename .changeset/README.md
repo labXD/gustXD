@@ -17,4 +17,4 @@ project in
   - minor only
 - pnpm changeset version
 - pnpm changeset publish
-- git push --tags
+- git push --follow-tags
