@@ -2,7 +2,7 @@
   "name": "@labxd/gustxd",
   "module": "dist/gustxd.esm.js",
   "description": "UI react components with Tailwind CSS in mind.",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -23,12 +23,14 @@
     "dist",
     "presets.js",
     "README.md",
-    "src/styles/globals.css"
+    "src/styles/globals.css",
+    "src/colors.js"
   ],
   "exports": {
     ".": "./dist/index.js",
-    "./full-styles.css": "./dist/gustxd.cjs.production.min.css",
+    "./styles-standalone.css": "./dist/gustxd.cjs.production.min.css",
     "./styles.css": "./src/styles/globals.css",
+    "./colors": "./src/colors.js",
     "./tailwind": "./presets.js",
     "./tailwind-preset": "./presets.js"
   },

@@ -37,7 +37,7 @@ const XDBaseClass = plugin.withOptions(function (
         base: ["h1"],
         class: ["h1"],
         styles: {
-          fontSize: `${baseFontSize * 2}px`,
+          fontSize: "2rem",
           lineHeight: "1.5",
         },
       },
