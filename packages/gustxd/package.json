@@ -2,7 +2,7 @@
   "name": "@labxd/gustxd",
   "module": "dist/gustxd.esm.js",
   "description": "UI react components with Tailwind CSS in mind.",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -23,7 +23,8 @@
     "dist",
     "presets.js",
     "README.md",
-    "src/styles/globals.css",
+    "src/styles/**",
+    "src/plugin/**",
     "src/colors.js"
   ],
   "exports": {
