@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.7.1
+
+### Patch Changes
+
+- missing colors path and broken h1 tag
+
 ## 0.7.0
 
 ### Minor Changes
