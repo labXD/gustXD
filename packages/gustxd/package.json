@@ -23,12 +23,14 @@
     "dist",
     "presets.js",
     "README.md",
-    "src/styles/globals.css"
+    "src/styles/globals.css",
+    "src/colors.js"
   ],
   "exports": {
     ".": "./dist/index.js",
-    "./full-styles.css": "./dist/gustxd.cjs.production.min.css",
+    "./styles-standalone.css": "./dist/gustxd.cjs.production.min.css",
     "./styles.css": "./src/styles/globals.css",
+    "./colors": "./src/colors.js",
     "./tailwind": "./presets.js",
     "./tailwind-preset": "./presets.js"
   },
