@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.7.2
+
+### Patch Changes
+
+- expose plugin dir
+
 ## 0.7.1
 
 ### Patch Changes
