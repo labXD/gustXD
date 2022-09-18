@@ -19,13 +19,13 @@ const xdOfficialColors = {
     "purple-900": "#551EAE",
   },
   "xd-secondary-black": {
-    rgb: "rgba(29 36 51 / 0.8)", // tailwind official syntax
+    rgb: "rgb(29 36 51 / 0.8)", // tailwind official syntax
     rgba: "rgba(29, 36, 51, 0.8)",
     hexa: "#1d2433cc",
     hex: "#525761",
   },
   "xd-disabled-black": {
-    rgb: "rgba(29 36 51 / 0.65)", // tailwind official syntax
+    rgb: "rgb(29 36 51 / 0.65)", // tailwind official syntax
     rgba: "rgba(29, 36, 51, 0.65)",
     hexa: "#767982",
     hex: "#1d2433a6",
