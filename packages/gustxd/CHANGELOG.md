@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.8.0
+
+### Minor Changes
+
+- new layout
+
 ## 0.7.2
 
 ### Patch Changes
