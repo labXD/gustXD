@@ -7,8 +7,9 @@ const xdColors = require("../colors")
 
 const XDButtons = plugin(function ({ addComponents }) {
   addComponents({
+    // #region Button
     ".button-primary": {
-      color: "#fff",
+      color: xdColors["xd-primary"].white,
       "background-color": xdColors["xd-primary"]["purple-700"],
       "&:not(:disabled):hover": {
         "background-color": xdColors["xd-primary"]["purple-800"],
@@ -22,14 +23,14 @@ const XDButtons = plugin(function ({ addComponents }) {
         cursor: "not-allowed",
       },
     },
-    ".button-danger": {
+    ".button-red": {
       color: xdColors["xd-primary"].white,
-      "background-color": xdColors["xd-danger"][700],
+      "background-color": xdColors["xd-secondary"]["red-700"],
       "&:not(:disabled):hover": {
-        "background-color": xdColors["xd-danger"][800],
+        "background-color": xdColors["xd-secondary"]["red-800"],
       },
       "&:not(:disabled):focus, &:not(:disabled):active": {
-        "background-color": xdColors["xd-danger"][900],
+        "background-color": xdColors["xd-secondary"]["red-900"],
       },
       "&:disabled": {
         "background-color": xdColors["xd-neutral"][200],
@@ -67,6 +68,7 @@ const XDButtons = plugin(function ({ addComponents }) {
       "font-size": smFontSize,
       "line-height": smLineHeight,
     },
+    // #endregion Button
   })
 })
 

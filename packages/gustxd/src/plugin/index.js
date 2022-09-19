@@ -35,7 +35,7 @@ const XDBaseClass = plugin.withOptions(function (
       },
       {
         base: ["h1"],
-        class: ["h1"],
+        class: [".h1"],
         styles: {
           fontSize: "2rem",
           lineHeight: "1.5",
@@ -43,7 +43,7 @@ const XDBaseClass = plugin.withOptions(function (
       },
       {
         base: ["h2"],
-        class: ["h2"],
+        class: [".h2"],
         styles: {
           fontSize: twoXLFontSize,
           lineHeight: twoXLLineHeight,
@@ -51,17 +51,17 @@ const XDBaseClass = plugin.withOptions(function (
       },
       {
         base: ["h3"],
-        class: ["h3"],
+        class: [".h3"],
         styles: {
           fontSize: xLFontSize,
           lineHeight: xLLineHeight,
         },
       },
-      ///#endregion headers
+      // #endregion headers
       // #region buttons
       {
         base: ["button"],
-        class: ["button"],
+        class: [".button"],
         styles: {
           display: "flex",
           "font-size": baseFontSize,
@@ -80,7 +80,7 @@ const XDBaseClass = plugin.withOptions(function (
       },
       {
         base: ["button:disabled"],
-        class: ["button-disabled"],
+        class: [".button-disabled"],
         styles: {
           "background-color": xdColors["xd-neutral"][200],
           color: xdColors["xd-disabled-black"].rgba,

@@ -9,6 +9,16 @@
 @tailwind utilities;
 
 @layer components {
+  .xd-layout {
+    @apply lg:max-w-7xl lg:mx-auto;
+  }
+  .xd-layout-width {
+    @apply lg:max-w-7xl lg:mx-auto;
+  }
+  .button-icon-ghost {
+    @apply text-xd-disabled-black-rgb;
+    @apply hover:text-xd-primary-purple-800;
+  }
   .xd-button-secondary-light {
     @apply ring-1 ring-inset;
     @apply text-xd-primary-black bg-white ring-neutral-300;
@@ -16,11 +26,11 @@
 
   .xd-button-secondary-light {
     @apply ring-1 ring-inset;
-    @apply text-xd-primary-black/80 bg-white ring-neutral-300;
+    @apply text-xd-secondary-black-rgb bg-white ring-neutral-300;
   }
 
   .xd-button-ghost {
-    @apply text-xd-primary-black/[.65] bg-white;
+    @apply text-xd-disabled-black-rgb bg-white;
   }
 
   .xd-button-link {
@@ -38,7 +48,7 @@
   }
 
   .xd-divider {
-    @apply flex items-center text-xd-text-primary/80 font-semibold px-4;
+    @apply flex items-center text-xd-secondary-black-rgb font-semibold px-4;
     @apply after:flex after:flex-grow after:content-[''] after:h-[1px] after:bg-neutral-300;
     @apply before:flex before:flex-grow before:content-[''] before:h-[1px] before:bg-neutral-300;
   }
