@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.8.1
+
+### Patch Changes
+
+- f19ee1d: moved page layout to preset
+
 ## 0.8.0
 
 ### Minor Changes

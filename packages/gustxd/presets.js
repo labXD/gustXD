@@ -15,44 +15,6 @@ const config = {
     extend: {
       colors: {
         ...xdColors,
-        // #region xd colors but may not be used
-        // "xd-red": {
-        //   50: "#FDFCFB",
-        //   100: "#FCEFEF",
-        //   200: "#F9CBDE",
-        //   300: "#F19CBD",
-        //   400: "#F06B99",
-        //   500: "#F03A6B",
-        //   600: "#D32F59",
-        //   700: "#AE2341",
-        //   800: "#82192A",
-        //   900: "#511016",
-        // },
-        // "xd-purple": {
-        //   50: "#FAF8FB",
-        //   100: "#F2EBF9",
-        //   200: "#E0C0FD",
-        //   300: "#C793FA",
-        //   400: "#9B64FF",
-        //   500: "#873AFF",
-        //   600: "#7832EB",
-        //   700: "#6023C6",
-        //   800: "#45119C",
-        //   900: "#1B008B",
-        // },
-        // "xd-text-primary": {
-        //   white: colors.white,
-        //   black: "#1D2433",
-        // },
-        xd: {
-          bg: "#F6F0FF",
-          // "text-primary": "#1D2433",
-          // "purple-primary": "#782FED",
-          // "purple-secondary": "#641DD6",
-          // "red-primary": "#F75480",
-          // "red-secondary": "#DE3562",
-        },
-        // #endregion
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -4,6 +4,12 @@
 React. It is meant extend your Tailwind setup. Install, point, and start using
 the components.
 
+## What you get
+
+- Button, card classes
+- Form input stylings
+- React components based on Tailwind UI
+
 ## Prereq
 
 > You will need [Tailwind CSS](https://tailwindcss.com/docs/installation) setup.
@@ -63,9 +69,9 @@ custom configuration with ours.
 // tailwind.config.js
 
 module.exports = {
-  presets: [require("@labxd/gustxd/tailwind")],
+  presets: [require("@labxd/gustxd/tailwind-preset")],
   content: [
-    // IMPORTANT! This path is needed to add the tailwind styles to our components
+    // IMPORTANT! This path is needed to add the tailwind styles to our React components
     "node_modules/@labxd/gustxd/dist/**/*.{js,ts,jsx,tsx}",
     ...
   ],
