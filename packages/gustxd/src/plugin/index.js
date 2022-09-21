@@ -5,8 +5,7 @@ const colors = require("tailwindcss/colors")
 const xdColors = require("../colors")
 
 // 16px font with 24px (1.5rem) line height
-const [baseFontSize, { lineHeight: baseLineHeight }] =
-  defaultTheme.fontSize.base
+const [{ lineHeight: baseLineHeight }] = defaultTheme.fontSize.base
 
 // 20px font with 28px (1.75rem) line height
 const [xLFontSize, { lineHeight: xLLineHeight }] = defaultTheme.fontSize["xl"]
@@ -16,7 +15,7 @@ const [twoXLFontSize, { lineHeight: twoXLLineHeight }] =
   defaultTheme.fontSize["2xl"]
 
 // default utilities from tailwindcss
-const { spacing, borderWidth, borderRadius, fontWeight } = defaultTheme
+const { spacing, borderWidth, borderRadius } = defaultTheme
 
 const XDBaseClass = plugin.withOptions(function (
   options = { strategy: undefined }
@@ -60,29 +59,9 @@ const XDBaseClass = plugin.withOptions(function (
       // #endregion headers
       // #region buttons
       {
-        base: ["button"],
-        class: [".button"],
-        styles: {
-          display: "flex",
-          "font-size": baseFontSize,
-          "line-height": baseLineHeight,
-          "align-items": "center",
-          "justify-content": "center",
-          "font-weight": fontWeight["semibold"],
-          "padding-top": spacing[3],
-          "padding-right": spacing[4],
-          "padding-bottom": spacing[3],
-          "padding-left": spacing[4],
-          "border-radius": borderRadius["sm"],
-          "border-style": "inset",
-          transition: "all 150ms cubic-bezier(0.4, 0, 0.2, 1)",
-        },
-      },
-      {
         base: ["button:disabled"],
         class: [".button-disabled"],
         styles: {
-          "background-color": xdColors["xd-neutral"][200],
           color: xdColors["xd-disabled-black"].rgba,
           cursor: "not-allowed",
         },
