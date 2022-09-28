@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.8.2
+
+### Patch Changes
+
+- visited link color
+
 ## 0.8.1
 
 ### Patch Changes
