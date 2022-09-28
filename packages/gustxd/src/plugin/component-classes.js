@@ -3,6 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 const [smFontSize, { lineHeight: smLineHeight }] = defaultTheme.fontSize.sm
 const xdColors = require("../colors")
+const colors = require("tailwindcss/colors")
 const { spacing, borderRadius, fontWeight } = defaultTheme
 
 const [baseFontSize, { lineHeight: baseLineHeight }] =
@@ -77,6 +78,12 @@ const XDButtons = plugin(function ({ addComponents }) {
       "&:hover": {
         "&::after": {
           width: "100%",
+        },
+      },
+      "&:visited": {
+        color: colors.pink[600],
+        "&::after": {
+          "background-color": colors.pink[600],
         },
       },
     },
