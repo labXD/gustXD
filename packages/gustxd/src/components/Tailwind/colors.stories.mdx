@@ -2,278 +2,234 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs"
 
 <Meta title="Classes/Colors" />
 
-## xd-primary
+## XD Palette
 
-```js
-"xd-primary": {
-    black: "#1D2433",
-    "black-secondary",  // 80% text alpha
-    "black-disabled",  // 65% text alpha
+```json
+{
+  "xd-primary": {
+    "white": "#FFFFFF",
+    "black": "#1D2433", // default text color
     "purple-100": "#F6F0FF",
-    "purple-700": "#782FED",
+    "purple-700": "#782FED", // default action color
     "purple-800": "#641DD6",
-    "purple-900": "#551EAE",
-},
+    "purple-900": "#551EAE"
+  },
+  "xd-secondary-black": {
+    "rgb": "rgb(29 36 51 / 0.8)", // tailwind official syntax
+    "rgba": "rgba(29, 36, 51, 0.8)",
+    "hexa": "#1d2433cc",
+    "hex": "#525761"
+  },
+  "xd-disabled-black": {
+    "rgb": "rgb(29 36 51 / 0.65)", // tailwind official syntax
+    "rgba": "rgba(29, 36, 51, 0.65)",
+    "hexa": "#767982",
+    "hex": "#1d2433a6"
+  },
+  "xd-secondary": {
+    "red-100": "#FFF5F8",
+    "red-700": "#F75480",
+    "red-800": "#DE3562",
+    "red-900": "#B52149"
+  },
+  "xd-danger": {
+    "100": "#FEF1F2",
+    "700": "#E02D3C",
+    "800": "#BA2532", // primary error color
+    "900": "#981B25"
+  },
+  "xd-success": {
+    "100": "#EDFDF8",
+    "700": "#08875D",
+    "800": "#04724D",
+    "900": "#066042"
+  },
+  "xd-warning": {
+    "100": "#FFF8EB",
+    "700": "#B25E09",
+    "800": "#96530F",
+    "900": "#80460D"
+  },
+  "xd-neutral": {
+    "100": "#F8F9FC",
+    "200": "#F1F3F9",
+    "300": "#E1E6EF", // default border color
+    "400": "#CBD2E1",
+    "500": "#94A0B8",
+    "600": "#5F6C85",
+    "700": "#3F444D",
+    "800": "#23272F",
+    "900": "#1B1F27"
+  }
+}
 ```
 
 <Canvas>
-  <Story name="xd-primary">
-    <section className="grid grid-cols-3 h-20">
-      <div className="relative bg-xd-primary-black group pointer-events-auto">
+  <Story name="XD color palette">
+    <section className="grid grid-cols-3">
+      <div className="h-20 relative bg-xd-primary-black group pointer-events-auto">
         <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-primary-black
         </span>
       </div>
-      <div className="relative bg-xd-primary-black/80 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-primary-black secondary
-        </span>
-      </div>
-      <div className="relative bg-xd-primary-black/[.65] group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-primary-black disabled
-        </span>
-      </div>
-    </section>
-    <section className="grid grid-cols-4 h-20">
-      <div className="relative bg-xd-primary-purple-100 group pointer-events-auto">
+      <div className="h-20 relative bg-xd-primary-white group pointer-events-auto">
         <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-primary-white
+        </span>
+      </div>
+      <div className="h-20 relative bg-xd-primary-purple-100 group pointer-events-auto">
+        <span className="text-center text-black transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-primary-purple-100
         </span>
       </div>
-      <div className="relative bg-xd-primary-purple-700 group pointer-events-auto">
+      <div className="h-20 relative bg-xd-primary-purple-700 group pointer-events-auto">
         <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-primary-purple-700
         </span>
       </div>
-      <div className="relative bg-xd-primary-purple-800 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="h-20 relative bg-xd-primary-purple-800 group pointer-events-auto">
+        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-primary-purple-800
         </span>
       </div>
-      <div className="relative bg-xd-primary-purple-900 group pointer-events-auto">
+      <div className="h-20 relative bg-xd-primary-purple-900 group pointer-events-auto">
         <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-primary-purple-900
         </span>
       </div>
-    </section>
-  </Story>
-</Canvas>
-
-## xd-secondary
-
-```js
-"xd-secondary": {
-    "red-100": "#FFF5F8",
-    "red-700": "#F75480",
-    "red-800": "#DE3562",
-    "red-900": "#B52149",
-},
-```
-
-<Canvas>
-  <Story name="xd-secondary">
-    <section className="grid grid-cols-4 h-20">
-      <div className="relative bg-xd-secondary-red-100 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-secondary-black-rgb h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-secondary-black-rgb
+        </span>
+      </div>
+      <div className="bg-xd-disabled-black-rgb h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-disabled-black-rgb
+        </span>
+      </div>
+      <div className="bg-xd-secondary-red-100 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-secondary-red-100
         </span>
       </div>
-      <div className="relative bg-xd-secondary-red-700 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-secondary-red-700 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-secondary-red-700
         </span>
       </div>
-      <div className="relative bg-xd-secondary-red-800 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-secondary-red-800 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-secondary-red-800
         </span>
       </div>
-      <div className="relative bg-xd-secondary-red-900 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-secondary-red-900 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-secondary-red-900
         </span>
       </div>
-    </section>
-  </Story>
-</Canvas>
-
-## xd-neutral
-
-```js
-"xd-neutral": {
-    100: "#F8F9FC",
-    200: "#F1F3F9",
-    300: "#E1E6EF",
-    400: "#CBD2E1",
-    500: "#94A0B8",
-    600: "#5F6C85",
-    700: "#3F444D",
-    800: "#23272F",
-    900: "#1B1F27",
-},
-```
-
-<Canvas>
-  <Story name="xd-neutral">
-    <main className="grid grid-cols-9 h-20">
-      <div className="relative bg-xd-neutral-100 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-100
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-200 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-200
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-300 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-300
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-400 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-400
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-500 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-500
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-600 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-600
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-700 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-700
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-800 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-800
-        </span>
-      </div>
-      <div className="relative bg-xd-neutral-900 group pointer-events-auto">
-        <span className="text-white text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
-          xd-neutral-900
-        </span>
-      </div>
-    </main>
-  </Story>
-</Canvas>
-
-## xd-danger
-
-```js
-"xd-danger": {
-    100: "#FEF1F2",
-    700: "#E02D3C",
-    800: "#BA2532",
-    900: "#981B25",
-},
-```
-
-<Canvas>
-  <Story name="xd-danger">
-    <section className="grid grid-cols-4 h-20">
-      <div className="relative bg-xd-danger-100 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-danger-100 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-danger-100
         </span>
       </div>
-      <div className="relative bg-xd-danger-700 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-danger-700 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-danger-700
         </span>
       </div>
-      <div className="relative bg-xd-danger-800 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-danger-800 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-danger-800
         </span>
       </div>
-      <div className="relative bg-xd-danger-900 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-danger-900 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-danger-900
         </span>
       </div>
-    </section>
-  </Story>
-</Canvas>
-
-## xd-success
-
-```js
-"xd-success": {
-    100: "#EDFDF8",
-    700: "#08875D",
-    800: "#04724D",
-    900: "#066042",
-},
-```
-
-<Canvas>
-  <Story name="xd-success">
-    <section className="grid grid-cols-4 h-20">
-      <div className="relative bg-xd-success-100 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-success-100 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-success-100
         </span>
       </div>
-      <div className="relative bg-xd-success-700 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-success-700 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-success-700
         </span>
       </div>
-      <div className="relative bg-xd-success-800 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-success-800 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-success-800
         </span>
       </div>
-      <div className="relative bg-xd-success-900 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-success-900 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-success-900
         </span>
       </div>
-    </section>
-  </Story>
-</Canvas>
-
-## xd-warning
-
-```js
-"xd-warning": {
-    100: "#FFF8EB",
-    700: "#B25E09",
-    800: "#96530F",
-    900: "#80460D",
-},
-```
-
-<Canvas>
-  <Story name="xd-warning">
-    <section className="grid grid-cols-4 h-20">
-      <div className="relative bg-xd-warning-100 group pointer-events-auto">
-        <span className="text-center transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-warning-100 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-warning-100
         </span>
       </div>
-      <div className="relative bg-xd-warning-700 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-warning-700 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-warning-700
         </span>
       </div>
-      <div className="relative bg-xd-warning-800 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-warning-800 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-warning-800
         </span>
       </div>
-      <div className="relative bg-xd-warning-900 group pointer-events-auto">
-        <span className="text-center text-white transition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+      <div className="bg-xd-warning-900 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
           xd-warning-900
+        </span>
+      </div>
+      <div className="bg-xd-neutral-100 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-100
+        </span>
+      </div>
+      <div className="bg-xd-neutral-200 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-200
+        </span>
+      </div>
+      <div className="bg-xd-neutral-300 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-300
+        </span>
+      </div>
+      <div className="bg-xd-neutral-400 h-20 relative group pointer-events-auto">
+        <span className="text-black text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-400
+        </span>
+      </div>
+      <div className="bg-xd-neutral-500 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-500
+        </span>
+      </div>
+      <div className="bg-xd-neutral-600 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-600
+        </span>
+      </div>
+      <div className="bg-xd-neutral-700 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-700
+        </span>
+      </div>
+      <div className="bg-xd-neutral-800 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-800
+        </span>
+      </div>
+      <div className="bg-xd-neutral-900 h-20 relative group pointer-events-auto">
+        <span className="text-white text-centertransition-all absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-30 group-hover:opacity-100 text-xs">
+          xd-xd-neutral-900
         </span>
       </div>
     </section>
