@@ -1,4 +1,17 @@
 const xdOfficialColors = {
+  ios: {
+    blue: "#007AFF",
+  },
+  figma: {
+    border: "#E6E6E6",
+  },
+  dark: {
+    "input-bg": "#1C1C1E",
+    border: "#444444",
+    bg: "#1B1B1B",
+    blue: "#0B81F8",
+    purple: "#D0B4FF",
+  },
   "xd-neutral": {
     100: "#F8F9FC",
     200: "#F1F3F9",
