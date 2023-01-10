@@ -1,5 +1,11 @@
 # @labxd/gustxd
 
+## 0.8.3
+
+### Patch Changes
+
+- figma colors
+
 ## 0.8.2
 
 ### Patch Changes
