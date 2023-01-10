@@ -2,7 +2,7 @@
   "name": "@labxd/gustxd",
   "module": "dist/gustxd.esm.js",
   "description": "UI react components with Tailwind CSS in mind.",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
